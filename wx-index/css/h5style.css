@@ -2,10 +2,11 @@
 * @Author: xiaogang
 * @Date:   2017-05-12 14:10:33
 * @Last Modified by:   user
-* @Last Modified time: 2017-05-19 15:05:12
+* @Last Modified time: 2017-05-22 18:12:21
 */
 @import url('bootstrap.min.css');
 @import url('../fonts/css/font-awesome.min.css');
+/*@import url('../../fontss/iconfont.css');*/
 
 /*移动端*/
 /**初始化***/
@@ -22,7 +23,10 @@ input[type="text"], input[type="password"], textarea { outline-style:none; -webk
 textarea { resize:none; }
 img  { border:none;vertical-align: top;}
 table {border-collapse:collapse;border-spacing:0;}
-td,th{padding:0}
+td,th{padding:0;}
+strong {  font-weight: normal;}
+em {  font-style: normal;}
+mark {  background: none;}
 a {text-decoration: none;}
 a:hover {text-decoration: none;}
 .clearFix:after { content:"";display:block;clear:both;} 
@@ -71,11 +75,12 @@ user-select: none;
 .bfb80{width:80%}
 .lh30{line-height:30px;}
 .fw-normal{font-weight: normal;}
-.none{display:none;}
+
+.none { display: none !important; }
 .absolute{position:absolute;}
 
-.border{ border: 1px solid #ccc; background: #;}
-body { color:#555;padding: 0; margin:0; border:0 none; font-family:Helvetica,"Microsoft YaHei","Arial Narrow"; background:;/* overflow-y:scroll;*/ }
+
+body { color:#555;padding: 0; margin:0; border:0 none; font-family:Helvetica,"Microsoft YaHei","Arial Narrow";/* overflow-y:scroll;*/ }
 a{ text-decoration: none; color: #666;}
 img{ display: block; max-width: 100%;}
 
@@ -93,7 +98,7 @@ img{ display: block; max-width: 100%;}
 .banner img{width: 20rem; height: 8.98rem;}
 .banner ul{ width: 500%;position: absolute; left: 0; top: 0;}
 .banner ul li{ float: left;width: 20rem;}
-.nav-list {padding-top: 1rem; font-size: 0.66rem;padding-bottom:0.64px;}
+.nav-list {padding-top: 1rem; font-size: 0.66rem;padding-bottom:0.64rem;}
 .nav-list li {float: left;  height: 4.38rem;text-align: center; padding: 0 0.16rem 0 0.58rem;}
 .nav-list li span {display: block;text-align: center; font-size: 1.24rem; width:2.76rem;height: 2.78rem; margin: 0 0.2rem;line-height: 2.78rem; border-radius: 50%; background: #fff; color: #fff;}
 .nav-list li p {text-align: center; font-size: 0.66rem; line-height: 1.62rem; color: #555555;}
@@ -109,18 +114,36 @@ img{ display: block; max-width: 100%;}
 .nav-list li .bj9{background: url() repeat-x;}
 .nav-list li .bj10{background: url() repeat-x;}
 
-
-
 .hot-title { padding:0 0 0.4rem 0.76rem;height: 1.5rem;font-size: 0.54rem;line-height: 1.46rem;background: #f4f7fc;color: #999899;}
-.hot-title a {display: block;}
 .hot-title i{color: #ff0000;padding-right: 0.16rem;}
+.hot-list{background: #f4f7fc;}
+.hot-list li {background: #fff; padding: 0.73rem 0 0.7rem 0.76rem;margin-bottom: 0.42rem; overflow: hidden;}
+.hot-list li a { display: block; overflow: hidden;}
+.hot-list img {width: 4.78rem;height: 3.3rem; float: left;}
+.hot-list p { float: left; padding-left: 0.8rem; width: 9.84rem;font-size: 0.8rem;line-height: 0.88rem;color: #3189ca;}
 
+.hot-list p span { display: block; width: 1.72rem;height:0.84rem;line-height: 0.84rem;border: 0.02rem solid #3189ca;border-radius: 0.15rem;margin-top: 0.78rem;font-size: 0.54rem;  text-align: center;}
+.hot-list div { float: left;font-size: 0.8rem;line-height: 0.88rem;color: #e71f19;}
+.hot-list div strong { display: block; width: 1.66rem;height:0.88rem;line-height: 0.88rem;background:#e71f19;border-radius: 0.15rem;margin-top: 0.32rem;font-size: 0.54rem;  text-align: center;color: #fff;}
+.hot-list div .blue{ background:#3189ca;}
+.index-foot { font-size: 0.64rem;line-height: 1.6rem; text-align: center;padding-bottom: 0.86rem;color: #e4e4e6;background: #f4f7fc;}
+/*主页结束*/
 
+/*学校简介*/
+.xxjj-title h2{font: bold  0.74rem/3.26rem '微软雅黑';text-align: center; padding-bottom: 0.28rem; }
+.xxjj-title a{display: block; color: #3189ca;}
+.xxjj-title p {text-indent: 0.5rem;}
 
-
-
-
-
+/*师资简介*/
+.szjj-list {background: #f5f7fc;}
+.szjj-list li {background: #fff; margin-top:0.4rem;padding: 0.56rem 0  0.56rem 0.82rem; overflow: hidden;}
+.szjj-list li a {overflow: hidden; display: block;}
+.szjj-list img {width: 7.2rem; height: 4.5rem;float: left;}
+.szjj-list p { float: left;padding-left: 0.58rem;}
+.szjj-list p strong {font-size: 0.8rem; line-height: 0.8rem;margin-bottom: 0.42rem;}
+.szjj-list span {display: block; font-size: 0.66rem;line-height: 1.52rem;}
+.szjj-list .man i {color:#3189ca;margin-left: 0.2rem;}
+.szjj-list .girl i {color:#ef62a0;margin-left: 0.2rem;}
 
 
 
