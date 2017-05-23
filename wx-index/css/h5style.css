@@ -2,7 +2,7 @@
 * @Author: xiaogang
 * @Date:   2017-05-12 14:10:33
 * @Last Modified by:   user
-* @Last Modified time: 2017-05-22 18:12:21
+* @Last Modified time: 2017-05-23 19:57:08
 */
 @import url('bootstrap.min.css');
 @import url('../fonts/css/font-awesome.min.css');
@@ -108,11 +108,11 @@ img{ display: block; max-width: 100%;}
 .nav-list li .bj3{background: url(data:image/jpeg;base64,/9j/4QAYRXhpZgAASUkqAAgAAAAAAAAAAAAAAP/sABFEdWNreQABAAQAAAA8AAD/4QMraHR0cDovL25zLmFkb2JlLmNvbS94YXAvMS4wLwA8P3hwYWNrZXQgYmVnaW49Iu+7vyIgaWQ9Ilc1TTBNcENlaGlIenJlU3pOVGN6a2M5ZCI/PiA8eDp4bXBtZXRhIHhtbG5zOng9ImFkb2JlOm5zOm1ldGEvIiB4OnhtcHRrPSJBZG9iZSBYTVAgQ29yZSA1LjMtYzAxMSA2Ni4xNDU2NjEsIDIwMTIvMDIvMDYtMTQ6NTY6MjcgICAgICAgICI+IDxyZGY6UkRGIHhtbG5zOnJkZj0iaHR0cDovL3d3dy53My5vcmcvMTk5OS8wMi8yMi1yZGYtc3ludGF4LW5zIyI+IDxyZGY6RGVzY3JpcHRpb24gcmRmOmFib3V0PSIiIHhtbG5zOnhtcD0iaHR0cDovL25zLmFkb2JlLmNvbS94YXAvMS4wLyIgeG1sbnM6eG1wTU09Imh0dHA6Ly9ucy5hZG9iZS5jb20veGFwLzEuMC9tbS8iIHhtbG5zOnN0UmVmPSJodHRwOi8vbnMuYWRvYmUuY29tL3hhcC8xLjAvc1R5cGUvUmVzb3VyY2VSZWYjIiB4bXA6Q3JlYXRvclRvb2w9IkFkb2JlIFBob3Rvc2hvcCBDUzYgKFdpbmRvd3MpIiB4bXBNTTpJbnN0YW5jZUlEPSJ4bXAuaWlkOjc0RTAyRDZEM0M1NzExRTdCNTUxRjk4NDdGNzZBNUJCIiB4bXBNTTpEb2N1bWVudElEPSJ4bXAuZGlkOjc0RTAyRDZFM0M1NzExRTdCNTUxRjk4NDdGNzZBNUJCIj4gPHhtcE1NOkRlcml2ZWRGcm9tIHN0UmVmOmluc3RhbmNlSUQ9InhtcC5paWQ6NzRFMDJENkIzQzU3MTFFN0I1NTFGOTg0N0Y3NkE1QkIiIHN0UmVmOmRvY3VtZW50SUQ9InhtcC5kaWQ6NzRFMDJENkMzQzU3MTFFN0I1NTFGOTg0N0Y3NkE1QkIiLz4gPC9yZGY6RGVzY3JpcHRpb24+IDwvcmRmOlJERj4gPC94OnhtcG1ldGE+IDw/eHBhY2tldCBlbmQ9InIiPz7/7gAOQWRvYmUAZMAAAAAB/9sAhAAGBAQEBQQGBQUGCQYFBgkLCAYGCAsMCgoLCgoMEAwMDAwMDBAMDg8QDw4MExMUFBMTHBsbGxwfHx8fHx8fHx8fAQcHBw0MDRgQEBgaFREVGh8fHx8fHx8fHx8fHx8fHx8fHx8fHx8fHx8fHx8fHx8fHx8fHx8fHx8fHx8fHx8fHx//wAARCACLAA8DAREAAhEBAxEB/8QAZwABAQEBAAAAAAAAAAAAAAAAAAECBwEBAQEBAQAAAAAAAAAAAAAAAAECBgcQAQACAQQDAQAAAAAAAAAAAAABAhEhMRIDQWHBghEBAQABAgcAAAAAAAAAAAAAAAERQQLwMVGBwRID/9oADAMBAAIRAxEAPwDrtu7ttra9rT7mZed36brzrrptk0I7OyNrWjO+spN96r6xllQFRABABWQBUQBUAFZQBUABEAVlAFQAVlAFQAEAFRAFQAbvxzpx/PL63vxpjtnyzEjGJzjbzn4kxxla/9k=);}
 .nav-list li .bj4{background: url(data:image/jpeg;base64,/9j/4QAYRXhpZgAASUkqAAgAAAAAAAAAAAAAAP/sABFEdWNreQABAAQAAAA8AAD/4QMraHR0cDovL25zLmFkb2JlLmNvbS94YXAvMS4wLwA8P3hwYWNrZXQgYmVnaW49Iu+7vyIgaWQ9Ilc1TTBNcENlaGlIenJlU3pOVGN6a2M5ZCI/PiA8eDp4bXBtZXRhIHhtbG5zOng9ImFkb2JlOm5zOm1ldGEvIiB4OnhtcHRrPSJBZG9iZSBYTVAgQ29yZSA1LjMtYzAxMSA2Ni4xNDU2NjEsIDIwMTIvMDIvMDYtMTQ6NTY6MjcgICAgICAgICI+IDxyZGY6UkRGIHhtbG5zOnJkZj0iaHR0cDovL3d3dy53My5vcmcvMTk5OS8wMi8yMi1yZGYtc3ludGF4LW5zIyI+IDxyZGY6RGVzY3JpcHRpb24gcmRmOmFib3V0PSIiIHhtbG5zOnhtcD0iaHR0cDovL25zLmFkb2JlLmNvbS94YXAvMS4wLyIgeG1sbnM6eG1wTU09Imh0dHA6Ly9ucy5hZG9iZS5jb20veGFwLzEuMC9tbS8iIHhtbG5zOnN0UmVmPSJodHRwOi8vbnMuYWRvYmUuY29tL3hhcC8xLjAvc1R5cGUvUmVzb3VyY2VSZWYjIiB4bXA6Q3JlYXRvclRvb2w9IkFkb2JlIFBob3Rvc2hvcCBDUzYgKFdpbmRvd3MpIiB4bXBNTTpJbnN0YW5jZUlEPSJ4bXAuaWlkOjdFRjE4NUExM0M1NzExRTc5MDg2QkZCQjIwREM3NjFBIiB4bXBNTTpEb2N1bWVudElEPSJ4bXAuZGlkOjdFRjE4NUEyM0M1NzExRTc5MDg2QkZCQjIwREM3NjFBIj4gPHhtcE1NOkRlcml2ZWRGcm9tIHN0UmVmOmluc3RhbmNlSUQ9InhtcC5paWQ6N0VGMTg1OUYzQzU3MTFFNzkwODZCRkJCMjBEQzc2MUEiIHN0UmVmOmRvY3VtZW50SUQ9InhtcC5kaWQ6N0VGMTg1QTAzQzU3MTFFNzkwODZCRkJCMjBEQzc2MUEiLz4gPC9yZGY6RGVzY3JpcHRpb24+IDwvcmRmOlJERj4gPC94OnhtcG1ldGE+IDw/eHBhY2tldCBlbmQ9InIiPz7/7gAOQWRvYmUAZMAAAAAB/9sAhAAGBAQEBQQGBQUGCQYFBgkLCAYGCAsMCgoLCgoMEAwMDAwMDBAMDg8QDw4MExMUFBMTHBsbGxwfHx8fHx8fHx8fAQcHBw0MDRgQEBgaFREVGh8fHx8fHx8fHx8fHx8fHx8fHx8fHx8fHx8fHx8fHx8fHx8fHx8fHx8fHx8fHx8fHx//wAARCACKAA8DAREAAhEBAxEB/8QAXQABAQEBAAAAAAAAAAAAAAAAAAECBwEBAQEBAQAAAAAAAAAAAAAAAAECAwcQAQEBAQEBAQAAAAAAAAAAAAABAgMRIVERAQEBAQADAAAAAAAAAAAAAAARAQIxQQP/2gAMAwEAAhEDEQA/AOma7ddX3W9W/ttrq8t3vrfOk7dsyydNSX5ZLQz6dZ71hWAD1qB6QRUAGgAaiBAagEBqIEBqIEEagEBpABqIEBqAQFQAaQBGgAUAFQB//9k=) repeat-x;}
 .nav-list li .bj5{background: url(data:image/jpeg;base64,/9j/4QAYRXhpZgAASUkqAAgAAAAAAAAAAAAAAP/sABFEdWNreQABAAQAAAA8AAD/4QMraHR0cDovL25zLmFkb2JlLmNvbS94YXAvMS4wLwA8P3hwYWNrZXQgYmVnaW49Iu+7vyIgaWQ9Ilc1TTBNcENlaGlIenJlU3pOVGN6a2M5ZCI/PiA8eDp4bXBtZXRhIHhtbG5zOng9ImFkb2JlOm5zOm1ldGEvIiB4OnhtcHRrPSJBZG9iZSBYTVAgQ29yZSA1LjMtYzAxMSA2Ni4xNDU2NjEsIDIwMTIvMDIvMDYtMTQ6NTY6MjcgICAgICAgICI+IDxyZGY6UkRGIHhtbG5zOnJkZj0iaHR0cDovL3d3dy53My5vcmcvMTk5OS8wMi8yMi1yZGYtc3ludGF4LW5zIyI+IDxyZGY6RGVzY3JpcHRpb24gcmRmOmFib3V0PSIiIHhtbG5zOnhtcD0iaHR0cDovL25zLmFkb2JlLmNvbS94YXAvMS4wLyIgeG1sbnM6eG1wTU09Imh0dHA6Ly9ucy5hZG9iZS5jb20veGFwLzEuMC9tbS8iIHhtbG5zOnN0UmVmPSJodHRwOi8vbnMuYWRvYmUuY29tL3hhcC8xLjAvc1R5cGUvUmVzb3VyY2VSZWYjIiB4bXA6Q3JlYXRvclRvb2w9IkFkb2JlIFBob3Rvc2hvcCBDUzYgKFdpbmRvd3MpIiB4bXBNTTpJbnN0YW5jZUlEPSJ4bXAuaWlkOjk1MUFFQjhBM0M1NzExRTc5RTQ0QkZGMTQxMTc4QTkxIiB4bXBNTTpEb2N1bWVudElEPSJ4bXAuZGlkOjk1MUFFQjhCM0M1NzExRTc5RTQ0QkZGMTQxMTc4QTkxIj4gPHhtcE1NOkRlcml2ZWRGcm9tIHN0UmVmOmluc3RhbmNlSUQ9InhtcC5paWQ6OTUxQUVCODgzQzU3MTFFNzlFNDRCRkYxNDExNzhBOTEiIHN0UmVmOmRvY3VtZW50SUQ9InhtcC5kaWQ6OTUxQUVCODkzQzU3MTFFNzlFNDRCRkYxNDExNzhBOTEiLz4gPC9yZGY6RGVzY3JpcHRpb24+IDwvcmRmOlJERj4gPC94OnhtcG1ldGE+IDw/eHBhY2tldCBlbmQ9InIiPz7/7gAOQWRvYmUAZMAAAAAB/9sAhAAGBAQEBQQGBQUGCQYFBgkLCAYGCAsMCgoLCgoMEAwMDAwMDBAMDg8QDw4MExMUFBMTHBsbGxwfHx8fHx8fHx8fAQcHBw0MDRgQEBgaFREVGh8fHx8fHx8fHx8fHx8fHx8fHx8fHx8fHx8fHx8fHx8fHx8fHx8fHx8fHx8fHx8fHx//wAARCACLAA8DAREAAhEBAxEB/8QAaQABAQEBAQAAAAAAAAAAAAAAAAECAwYBAQEBAQEAAAAAAAAAAAAAAAACAQUHEAEAAgIBAgcAAAAAAAAAAAAAARECAxITBCFRgbEiYqIRAQEBAAEFAQAAAAAAAAAAAAARAQIxQVGhwQP/2gAMAwEAAhEDEQA/APaZ9z3Oybz255T55ZTPu5tekZ+fHOmYkb90RMRsyiJ8JqZDeGeGGqAGgAoAFAA2AQFwCAqAQFQCAqAQFQCAqAQVUAgioBBVAA0ARoA7bunfw6dfTqV+xHC976+MYcam+N1NXyv0prdr/9k=) repeat-x;}
-.nav-list li .bj6{background: url() repeat-x;}
+/*.nav-list li .bj6{background: url() repeat-x;}
 .nav-list li .bj7{background: url() repeat-x;}
 .nav-list li .bj8{background: url() repeat-x;}
 .nav-list li .bj9{background: url() repeat-x;}
-.nav-list li .bj10{background: url() repeat-x;}
+.nav-list li .bj10{background: url() repeat-x;}*/
 
 .hot-title { padding:0 0 0.4rem 0.76rem;height: 1.5rem;font-size: 0.54rem;line-height: 1.46rem;background: #f4f7fc;color: #999899;}
 .hot-title i{color: #ff0000;padding-right: 0.16rem;}
@@ -130,29 +130,75 @@ img{ display: block; max-width: 100%;}
 /*主页结束*/
 
 /*学校简介*/
+.xxjj-title {padding: 0 0.82rem;}
 .xxjj-title h2{font: bold  0.74rem/3.26rem '微软雅黑';text-align: center; padding-bottom: 0.28rem; }
 .xxjj-title a{display: block; color: #3189ca;}
-.xxjj-title p {text-indent: 0.5rem;}
+.xxjj-title p, .xxjj-title h3 {text-indent: 2em;font-size: 0.64rem;line-height: 1.28rem;}
+.xxjj-title h3 {color:#3189ca;}
 
 /*师资简介*/
 .szjj-list {background: #f5f7fc;}
 .szjj-list li {background: #fff; margin-top:0.4rem;padding: 0.56rem 0  0.56rem 0.82rem; overflow: hidden;}
 .szjj-list li a {overflow: hidden; display: block;}
-.szjj-list img {width: 7.2rem; height: 4.5rem;float: left;}
-.szjj-list p { float: left;padding-left: 0.58rem;}
-.szjj-list p strong {font-size: 0.8rem; line-height: 0.8rem;margin-bottom: 0.42rem;}
-.szjj-list span {display: block; font-size: 0.66rem;line-height: 1.52rem;}
-.szjj-list .man i {color:#3189ca;margin-left: 0.2rem;}
-.szjj-list .girl i {color:#ef62a0;margin-left: 0.2rem;}
+.szjj-list img, .szjj1-cont img {width: 7.2rem; height: 4.5rem;float: left;}
+.szjj-list p, .szjj1-cont .title p  { float: left;padding-left: 0.58rem;}
+.szjj-list p strong, .szjj1-cont .title p strong {font-size: 0.8rem; line-height: 0.8rem;margin-bottom: 0.42rem;}
+.szjj-list span, .szjj1-cont span {display: block; font-size: 0.66rem;line-height: 1.52rem;}
+.szjj-list .man i, .szjj1-cont .man i {color:#3189ca;margin-left: 0.44rem;}
+.szjj-list .girl i, .szjj1-cont .girl i {color:#ef62a0;margin-left: 0.44rem;}
+
+/*师资简介1 详情页*/
+.szjj1-cont {background: #fcfafb; padding: 0.52rem 0rem 0.48rem 0rem;}
+.szjj1-cont .title {background: #fff; padding: 0 0.82rem 0.52rem 0.82rem; margin-bottom: 0.38rem;}
+.szjj1-cont>p { text-indent: 2em; font-size: 0.64rem; line-height: 1.7rem; padding: 0 0.82rem; }
+
+ /*联系我们*/
+.lxwm-list ,.zxhd-list {background: #f5f7fc;padding-bottom: 0.96rem; }
+.lxwm-list a, .zxhd-list a{display: block; color: #777777;}
+.lxwm-list li, .zxhd-list li {background: #fff;padding: 0 0.76rem;font-size: 0.8rem;/* height: 2.9rem;*/line-height: 2.9rem;margin-bottom: 0.28rem;}
+.lxwm-list li i,.zxhd-list li i {margin-right: 1.06rem; color: #3189ca;}
+
+/*最新活动*/
+.zxhd-list  li {background: #fff;line-height: 0.8rem; padding: 0;}
+.zxhd-list  li a {line-height: 0.8rem; padding: 0.56rem 0.8rem 0.1rem 0.8rem;}
+.zxhd-list  li p {font-size: 0.52rem;line-height: 1.44rem;color: #ddd;}
+/*热门课程 */
+                  /*下拉选项*/
 
 
+.rmkc-head  { float: left;background: #f4f8fc; padding: 0.4rem 0;position: relative;}
+.rmkc-head  .rmkc-headList { padding: 0.48rem;background: #fff; width: 20rem;}
+.rmkc-head  .rmkc-headList li { float: left;border-right: 0.04rem solid #e1dfdf;line-height: 1.26rem;font-size: 0.64rem; text-align: center;}
+.rmkc-head i{margin:0  0.8rem 0 1.15rem;}
+.rmkc-head  .rmkc-headList li:nth-of-type(1) { width: 5.08rem;}
+.rmkc-head  .rmkc-headList li:nth-of-type(2) { width: 5.74rem;}
+.rmkc-head  .rmkc-headList li:nth-of-type(3) { width: 5.74rem;}
+.rmkc-head  .rmkc-headList li:nth-of-type(4) { width: 1.76rem; border: none;}
+.rmkc-head  .rmkc-headList li:nth-of-type(4) i {margin: 0 0 0 0.66rem;}
+.rmkc-head div { float: left;padding: 0.48rem 0;width:  9.96rem; font-size: 0.64rem; text-align: center; position: relative;background: #fff;line-height: 1.28rem;}
+.rmkc-head section {position: absolute; left: 0; top: 2.68rem;width: 20rem;z-index: 999;  background: rgba(0,0,0,0.8);           height: 1200%;}
+.rmkc-head section ul { border-top: 0.02rem solid #000;background: #fff;padding:0 1.12rem 1rem;}
+.rmkc-head section ul li {background:#fff; font-size: 0.64rem;line-height: 2.16rem; border-bottom: 0.02rem solid #dbd8d8;}
+.rmkc-head ul li:active ,.szjj-head ul li:hover {color: #5699d0;}
 
 
+.rmkc-list {float: left;width: 20rem;position: relative;}
+.rmkc-list ul a {display: block;}
+.rmkc-list ul{ background: #f4f8fc;}
+.rmkc-list ul li {background: #fff;margin-bottom: 0.38rem;padding: 0.7rem 0.78rem 0.48rem 0.78rem;overflow: hidden;}
+.rmkc-list li img {width: 4.78rem;float: left; height: 3.64rem;}
+.rmkc-list li  .rmkc-cont {float: left; width:8.6rem; padding-left: 0.78rem;color: #555555; line-height: 0.92rem;font-size: 0.52rem;}
+.rmkc-list h3 {font-size: 0.8rem;line-height: 1.12rem;color: #3189ca;}
+.rmkc-list .rmkc-cont span { display: inline-block; width: 1.72rem;height:0.68rem;line-height: 0.68rem;border: 0.02rem solid #3189ca;border-radius: 0.15rem;font-size: 0.46rem;  text-align: center;color: #3189ca; margin-left: 0.28rem;}
+.rmkc-list .rmkc-right  { float: right;font-size: 0.8rem;line-height: 0.88rem;color: #e71f19;}
+.rmkc-list div strong { display: block; width: 1.66rem;height:0.88rem;line-height: 0.88rem;background:#e71f19;border-radius: 0.15rem;margin-top: 0.32rem;font-size: 0.54rem;  text-align: center;color: #fff;}
+.rmkc-list div .blue{ background:#3189ca;}
+.rmkc-list .rmkc-radius {width: 2.52rem;height: 2.52rem;border-radius: 50%;border: 1px solid #f1f1f1; line-height: 2.52rem;text-align: center;position: absolute;bottom: -1rem;right: 0.46rem;  box-shadow: 0px 0px 0.1rem #ccc; background: #fcfcfc;color: #3189ca;}
 
-
-
-
-
+/*热门课程详情页*/
+.rmkc-btn{ position: absolute; left: 0; bottom: 0; right: 0; height: 2.2rem; text-align: center;}
+.rmkc-btn a {display: block;font-size: 0.76rem;line-height: 2.22rem;background: #3189ca;color: #ddd;}
+.rmkc-btn a:active ,.rmkc-btn a:hover {background: #0087ff;}
 
 
 
