@@ -2,7 +2,7 @@
 * @Author: xiaogang
 * @Date:   2017-05-12 14:10:33
 * @Last Modified by:   user
-* @Last Modified time: 2017-05-23 19:57:08
+* @Last Modified time: 2017-05-24 19:49:57
 */
 @import url('bootstrap.min.css');
 @import url('../fonts/css/font-awesome.min.css');
@@ -201,8 +201,30 @@ img{ display: block; max-width: 100%;}
 .rmkc-btn a:active ,.rmkc-btn a:hover {background: #0087ff;}
 
 
+.rmkc1-list .rmkc-cont p{ font-size:0.56rem ;line-height: 2.16rem;color: #e71f19;}
+.rmkc1-list a {display: block;}
+.rmkc1-list  ul li{padding-bottom: 1rem; margin-bottom:0;}
+.rmkc1-list .rmkc1-cont{ font-size: 0.64rem;color: #e71f19; line-height: 1.2rem; background: #fcfafb; padding: 0.22rem 0.76rem 0.66rem 0.76rem;font-size:0.64rem ;line-height: 1.2rem;margin-bottom: 0.4rem;}
+.rmkc1-list .rmkc1-cont li {padding: 0; margin: 0;background: #fcfafb; line-height: 1.2rem; height: 1.2rem;}
+.rmkc1-jieshao {padding: 0.48rem 0.76rem 0.58rem 0.76rem;font-size:0.64rem ;line-height: 1.2rem;background: #fff;color:#e71f19;}
+.rmkc1-jieshao h3{ font-size:0.64rem ;line-height: 1.2rem;color:#e71f19;}
 
+/*待支付列表页*/
+.dzf-head { width: 20rem;height: 1.66rem;line-height: 1.66rem; font-size: 0.66rem; text-align: center;background: #fff;margin-bottom: 0.06rem;color: #555555;}
+.dzf-head span { margin-left: 0.44rem;color:#e71f19;line-height: 1.66rem; font-size: 0.66rem;}
+.dzf-list li{position: relative;}
+.dzf-list li i {position:absolute; bottom: 0.64rem; right: 0.8rem; width: 0.8rem; height: 0.8rem;color: #777777;}
+.dzf-list li i:active { color: red;}
 
+/*老生核对信息页*/
+.lsxxhd-head {background: #fff; border-bottom: 0.01rem solid #e4e2e3; /*margin-bottom: 1.6rem; */font-size: 0.68rem;line-height: 1.28rem;}
+.lsxxhd-head li ,.lsxxhd-cont li{  overflow: hidden; padding: 0.46rem 0.76rem 0.4rem 0.76rem; border-bottom:0.02rem solid #e1dfdf ;}
+.lsxxhd-head span, .lsxxhd-cont span {float: left; margin-right: 1.1rem; color: #bbbbbb; width:3.08rem; text-align: right;}
+.lsxxhd-head input, .lsxxhd-cont p {float: left; font-size: 0.68rem; height: 1.28rem; width: 11.26rem;   border: none;color: #a0a0a0;}
+.lsxxhd-head em {float: left; width: 2.88rem; text-align: center;border-left: 0.06rem solid #e6e5e5; color: #1da0f1;}
+.lsxxhd-head em:active {background: rgba(0,0,0,0.1);}
+.lsxxhd-cont {background: #fff; font-size: 0.68rem;line-height: 1.28rem;}
+.lsxxhd-ts  {color: #e71f19; padding-left: 0.8rem;font-size: 0.56rem; height:1.44rem;line-height: 1.44rem;}
 
-
-
+/*信息核对信息页-新生核对*/
+.lsxxhd-newtitl{margin-top: 0.46rem;} 
