@@ -11,25 +11,22 @@
 <title>热门课程</title>
 </head>
 <style type="text/css">
-body { background: #f5f7fc;}
-
-
 
 </style>
 <body>
 <section class="rmkc-head">
     <ul class="rmkc-headList clearFix">
-      <li><em>校区</em><i class="icon iconfont icon-zhankai">  </i></li>
-      <li><em>年级</em><i class="icon iconfont icon-zhankai">  </i></li>
-      <li><em>语文</em><i class="icon iconfont icon-shouqi">  </i></li>
-      <li><i class="icon iconfont icon-zhankai">  </i></li>
+      <li class="js-bnt"><em>校区</em><i class="icon iconfont icon-zhankai"></i></li>
+      <li class="js-bnt"><em>年级</em><i class="icon iconfont icon-zhankai"></i></li>
+      <li class="js-bnt"><em>语文</em><i class="icon iconfont icon-zhankai"></i></li>
+      <li class="js-soso"><i class="icon iconfont icon-sousuo-sousuo bold"></i></li>
     </ul>
-    <section class="none">
-      <ul class="none">
+    <section class="js-list none">
+      <ul class="">
          <li>海淀黄庄校区</li>
          <li>五道口校区</li>
        </ul>
-        <ul class="none">
+        <ul class="">
          <li>小学一年级</li>
          <li>小学二年级</li>
          <li>小学三年级</li>
@@ -91,7 +88,7 @@ body { background: #f5f7fc;}
       </a>
     </li>
   </ul>
-  <div class="rmkc-radius"><i class="icon iconfont icon-school"></i></div>
+  <div class="rmkc-radius"><a href="wx-daizhifu.html"><i class="icon iconfont icon-baobiao bold"></i></a></div>
 </div>
 <div class="index-foot">
 ——我是有底线的——
@@ -102,12 +99,46 @@ body { background: #f5f7fc;}
 <script type="text/javascript">
 //师资简介的 搜索选项操作
 
-    // var $btns = $('.szjj-head').find('div');//选择科目 或性别
-    // var $lists = $('.szjj-head').find('ul');// 下面对应的展开ul
-    // var $off = $('.szjj-head').find('i'); // 图标标签
-    // var $pare = $('.szjj-head').find('section');//列表的父级
+     var $parent = $('.rmkc-head');             //整个tab的腹肌
+     var $btns = $parent.find('.js-bnt');     //二级切换的父级按钮
+     var $lists =$parent.find('.js-list ul');   // 下面对应的展开ul
+     var $off = $parent .find('i');             // 图标标签
+     var $search = $off.eq(3);               //点击搜索按钮
+
+
+
+      
+
+      $btns.click(function(){//一级切换
+          var index = $(this).index();
+
+          $btns.removeClass('active');
+          $(this).addClass('active');            //切换选中样式
+          $('.js-list').removeClass("none");    //二级整体显示
+          $lists.addClass('none');                //清洗二级全隐藏
+          $off.removeClass('icon-shouqi').addClass('icon-zhankai');  //清洗标签图样式还原
+          $lists.eq(index).removeClass('none') ;  //当前的显示
+          $off.eq(index).removeClass('icon-zhankai').addClass("icon-shouqi"); //当前图标更换
+     
+             
+           $lists.eq(index).find('li').click(function(){//二级下拉的 点击
+                       $btns.eq(index).removeClass('active');   //清空当一级的样式
+                       $('.js-list').addClass("none");                //二级整体隐藏
+                         $lists.addClass('none');                   //所有二级的清洗都隐藏
+                         $btns.eq(index).find('em').html(this.innerHTML)
+                         $off.eq(index).removeClass("icon-shouqi").addClass('icon-zhankai');
+                   
+                    })
+
+                
+              })
+
+  
+    
+
+
     //  $btns.click(function(event) {
-    //       var index = $(this).index();
+       
 
     //       $pare.removeClass("none");
     //       $lists.addClass('none');
@@ -135,7 +166,7 @@ body { background: #f5f7fc;}
       
      
           
-     });
+     // });
 
 
 

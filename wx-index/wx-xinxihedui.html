@@ -8,11 +8,10 @@
 <meta n ame="apple-mobile-web-app-status-bar-style" content="black" />
 <link rel="stylesheet" type="text/css" href="css/h5style.css">
 <link rel="stylesheet" href="../fontss/iconfont.css">
-<title>老生信息核对</title>
+<title>老/新生信息核对</title>
 </head>
 <style type="text/css">
-body { background: #f5f7fc; }
-
+body { background: #f5f7fc;  }
 
 
 </style>
@@ -26,7 +25,6 @@ body { background: #f5f7fc; }
       <span>手机号码</span><input type='text' placeholder="请输入有效手机号"><em>提交</em>
   </li>
 </ul>
-
 <!-- 老生信息 -->
 <div class="">
    <p class="lsxxhd-newtitl lsxxhd-ts"></p>
@@ -49,34 +47,87 @@ body { background: #f5f7fc; }
 
 
 <!-- 新生信息 -->
-<div class="">  <!-- 这里加class名 none 切换隐藏 -->
+<div class="xxhd-new">  <!-- 这里加class名 none 切换隐藏 -->
     <p class="lsxxhd-newtitl lsxxhd-ts">&nbsp;&nbsp;您的号码未注册过，请先完善孩子信息！</p>
-    <ul class="lsxxhd-cont ">
+
+
+    <ul class="xshd-cont ">
       <li class="">
-          <span>学生姓名</span><p>A小A</p>
+          <span>学&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;部</span>
+          <p><a href="javascript:;" class="btns active">小学</a><a href="javascript:;" class="btns">初中</a><a href="javascript:;" class="btns">高中</a></p>
       </li>
-      <li class="">
-          <span>年&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;级</span><p>五年级</p>
+
+
+      <li class="js-tabs">
+
+          <span>年&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;级</span>
+          
+          <ul class="">
+            <li><a href="javascript:;" class="btns">一年级</a><a href="javascript:;" class="btns">二年级</a><a href="javascript:;" class="btns">三年级</a></li>
+            <li><a href="javascript:;" class="btns">四年级</a><a href="javascript:;" class="btns">五年级</a><a href="javascript:;" class="btns">六年级</a></li>
+          </ul>
+          <ul class="none">
+            <li><a href="javascript:;" class="btns">初一年级</a><a href="javascript:;" class="btns">初二年级</a><a href="javascript:;" class="btns">初三年级</a></li>
+          </ul>
+          <ul class="none">
+            <li><a href="javascript:;" class="btns">高一年级</a><a href="javascript:;" class="btns">高二年级</a><a href="javascript:;" class="btns">高三年级</a></li>
+          </ul>
+
+  
       </li>
-      <li class="">
-          <span>出生日期</span><p>2002-01-01</p>
+      <li class="red">
+          <span><em>*</em>出生日期</span><input text="type" style=" border: none" placeholder="请输入正确时间">
+         <!--  <p>2002-01-01<p>/ -->
       </li>
-      <li class="">
-          <span>手机号码</span><p>13657245896</p>
-      </li>
+    
     </ul>
     <div class="lsxxhd-ts">&nbsp;&nbsp;请确保孩子信息准确，否则影响后续上课！</div>
 </div>
 <!-- 新生信息over -->
-
-
-
-
 
 <div class="rmkc-btn"><a href="###">报名</a></div>
 </body>
 
 <script type="text/javascript" src="js/jquery-1.10.2.min.js"></script>
 <script type="text/javascript" src="js/script.js"></script>
+<script type="text/javascript">
+var $paren = $('.xshd-cont');//tab父级
+var $btn = $paren.find('li').first().find('.btns');//选择学部的三个按钮
+var $list = $paren.find('.js-tabs ul');//选择年级的父级
+
+ $btn.click(function(){//学部 切换
+    var index = $(this).index()
+    $btn.removeClass('active')
+    $(this).addClass('active')
+    $list.addClass('none')
+   
+    $list.eq(index).removeClass('none');
+
+    tabClick(index);
+})
+
+tabClick(0);
+
+function  tabClick(num){
+  var index1 = num;
+  var $btn = $list.eq(num).find('.btns');
+
+    $btn.each(function(i){//循环加自定义索引 躲坑
+          $(this).attr("index",i);
+    });
+
+   $btn.click(function(){ //子选项 返回数据接口
+        var index2 = $(this).attr('index')*1;
+
+        // 返回的的选择数据  
+        console.log(index1+1,index2+1)
+       return 
+    })
+    
+}
+
+
+
+</script>
 
 </html>
