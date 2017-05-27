@@ -11,12 +11,8 @@
 <title>老/新生信息核对</title>
 </head>
 <style type="text/css">
-body { background: #f5f7fc;  }
-
-
 </style>
 <body>
-
 <ul class="lsxxhd-head">
   <li class="">
       <span>学员姓名</span><input type='text' placeholder="请输入学员姓名">
@@ -85,47 +81,41 @@ body { background: #f5f7fc;  }
 </div>
 <!-- 新生信息over -->
 
-<div class="rmkc-btn"><a href="###">报名</a></div>
+<div class="rmkc-btn"><a href="wx-zhifuyemian.html">报名</a></div>
 </body>
 
 <script type="text/javascript" src="js/jquery-1.10.2.min.js"></script>
 <script type="text/javascript" src="js/script.js"></script>
 <script type="text/javascript">
-var $paren = $('.xshd-cont');//tab父级
-var $btn = $paren.find('li').first().find('.btns');//选择学部的三个按钮
-var $list = $paren.find('.js-tabs ul');//选择年级的父级
 
- $btn.click(function(){//学部 切换
-    var index = $(this).index()
-    $btn.removeClass('active')
-    $(this).addClass('active')
-    $list.addClass('none')
-   
-    $list.eq(index).removeClass('none');
+    var $paren = $('.xshd-cont');//tab父级
+    var $btn = $paren.find('li').first().find('.btns');//选择学部的三个按钮
+    var $list = $paren.find('.js-tabs ul');//选择年级的父级
+    var $btns = $list.find('.btns');//所有二级选项按钮
+    
+    $btn.click(function(){//学部切换
+          var index = $(this).index()
+          $btn.removeClass('active')
+          $(this).addClass('active')
+          $list.addClass('none')
+          $list.eq(index).removeClass('none');
+    })
 
-    tabClick(index);
-})
-
-tabClick(0);
-
-function  tabClick(num){
-  var index1 = num;
-  var $btn = $list.eq(num).find('.btns');
-
-    $btn.each(function(i){//循环加自定义索引 躲坑
+    $list.eq(0).find('.btns').each(function(i){//循环加自定义索引 躲坑
           $(this).attr("index",i);
     });
 
-   $btn.click(function(){ //子选项 返回数据接口
-        var index2 = $(this).attr('index')*1;
+    $btns.click(function(){ //子选项 返回数据接口
+          var index1=  $(this).parent().parent('').index();
+          var index2 = $(this).index()+1;
 
-        // 返回的的选择数据  
-        console.log(index1+1,index2+1)
-       return 
+          if(index1==1){ //第一个子选项单独获取索引
+              index2 = $(this).attr('index')*1+1;
+          }
+          // 返回的的选择数据  
+          console.log(index1,index2)//正常从0开始的话就把两个+1去掉
     })
-    
-}
-
+      
 
 
 </script>

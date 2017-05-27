@@ -18,7 +18,7 @@
     <ul class="rmkc-headList clearFix">
       <li class="js-bnt"><em>校区</em><i class="icon iconfont icon-zhankai"></i></li>
       <li class="js-bnt"><em>年级</em><i class="icon iconfont icon-zhankai"></i></li>
-      <li class="js-bnt"><em>语文</em><i class="icon iconfont icon-zhankai"></i></li>
+      <li class="js-bnt"><em>科目</em><i class="icon iconfont icon-zhankai"></i></li>
       <li class="js-soso"><i class="icon iconfont icon-sousuo-sousuo bold"></i></li>
     </ul>
     <section class="js-list none">
@@ -88,7 +88,7 @@
       </a>
     </li>
   </ul>
-  <div class="rmkc-radius"><a href="wx-daizhifu.html"><i class="icon iconfont icon-baobiao bold"></i></a></div>
+  <div class="rmkc-radius"><a href="wx-daizhifu.html"><i class="icon iconfont icon-baobiao"></i></a></div>
 </div>
 <div class="index-foot">
 ——我是有底线的——
@@ -97,77 +97,61 @@
 <script type="text/javascript" src="js/jquery-1.10.2.min.js"></script>
 <script type="text/javascript" src="js/script.js"></script>
 <script type="text/javascript">
-//师资简介的 搜索选项操作
-
-     var $parent = $('.rmkc-head');             //整个tab的腹肌
-     var $btns = $parent.find('.js-bnt');     //二级切换的父级按钮
-     var $lists =$parent.find('.js-list ul');   // 下面对应的展开ul
-     var $off = $parent .find('i');             // 图标标签
-     var $search = $off.eq(3);               //点击搜索按钮
 
 
-
+// (function(){//热门课程的 搜索选项操作
       
+//      var $parent = $('.rmkc-head');             //整个tab的腹肌
+//      var $btns = $parent.find('.js-bnt');     //二级切换的父级按钮
+//      var $lists =$parent.find('.js-list ul');   // 下面对应的展开ul
+//      var $off = $parent .find('i');             // 图标标签
+//      var $search = $off.eq(3);               //点击搜索按钮
+//      var $parentList = $parent.find('section');
+//      var arr = [0,0,0];
+//       $btns.click(function(){//一级切换
+//           var index = $(this).index();
+//           var num = $(document).height()-$('.rmkc-head').height();
 
-      $btns.click(function(){//一级切换
-          var index = $(this).index();
+//           $parentList.css('height',num);//设置 显示遮罩高度
+//           $btns.removeClass('active');
+//           $(this).addClass('active');            //切换选中样式
+//           $('.js-list').removeClass("none");    //二级整体显示
+//           $lists.addClass('none');                //清洗二级全隐藏
+//           $off.removeClass('icon-shouqi').addClass('icon-zhankai');  //清洗标签图样式还原
+//           $lists.eq(index).removeClass('none') ;  //当前的显示
+//           $off.eq(index).removeClass('icon-zhankai').addClass("icon-shouqi"); //当前图标更换
+//     })
 
-          $btns.removeClass('active');
-          $(this).addClass('active');            //切换选中样式
-          $('.js-list').removeClass("none");    //二级整体显示
-          $lists.addClass('none');                //清洗二级全隐藏
-          $off.removeClass('icon-shouqi').addClass('icon-zhankai');  //清洗标签图样式还原
-          $lists.eq(index).removeClass('none') ;  //当前的显示
-          $off.eq(index).removeClass('icon-zhankai').addClass("icon-shouqi"); //当前图标更换
-     
-             
-           $lists.eq(index).find('li').click(function(){//二级下拉的 点击
-                       $btns.eq(index).removeClass('active');   //清空当一级的样式
-                       $('.js-list').addClass("none");                //二级整体隐藏
-                         $lists.addClass('none');                   //所有二级的清洗都隐藏
-                         $btns.eq(index).find('em').html(this.innerHTML)
-                         $off.eq(index).removeClass("icon-shouqi").addClass('icon-zhankai');
-                   
-                    })
 
-                
-              })
+//       $lists.find('li').click(function(){//二级下拉的点击 
+//             var index1 = $(this).parent('ul').index();  
+//             $btns.eq(index1).find('em').html(this.innerHTML);
+//             arr[index1] = this.innerHTML
+//              // console.log(index1,$(this).index(),arr)
+               
+//      })
 
-  
+//     $parentList.on('click',function(){//点击空白区域隐藏
+//             $(this).addClass('none')
+//             $off.removeClass('icon-shouqi').addClass('icon-zhankai');  //清洗标签图样式还原
+//             $btns.removeClass('active');   //清空当一级的样式         
+//       })
+
     
+//     $search.on('click',function(){//点击搜索时间的接口
+//         console.log(arr)
+//     })
 
 
-    //  $btns.click(function(event) {
-       
 
-    //       $pare.removeClass("none");
-    //       $lists.addClass('none');
-    //       $off.removeClass("icon-shouqi").addClass('icon-zhankai');
-    //       if(index==0){
-    //          $lists.eq(0).removeClass('none');
-    //          $off.eq(0).removeClass("icon-zhankai").addClass('icon-shouqi');
-    //       }else if(index ==2){
-    //            $lists.eq(1).removeClass('none');
-    //          $off.eq(1).removeClass("icon-zhankai").addClass('icon-shouqi');
 
-    //       }
-    //       $lists.eq(0).find('li').click(function(){//二级下拉的 点击
-    //            $lists.addClass('none');
-    //            $btns.eq(0).find('em').html(this.innerHTML)
-    //            $off.eq(0).removeClass("icon-shouqi").addClass('icon-zhankai');
-    //            $pare.addClass("none");
-    //       })
-    //       $lists.eq(1).find('li').click(function(){
-    //          $lists.addClass('none');
-    //          $btns.eq(1).find('em').html(this.innerHTML);
-    //          $off.eq(1).removeClass("icon-shouqi").addClass('icon-zhankai');
-    //          $pare.addClass("none");
-    //     })
-      
-     
-          
-     // });
 
+
+
+
+
+
+// })()
 
 
 
