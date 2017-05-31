@@ -2,7 +2,7 @@
 * @Author: user
 * @Date:   2017-05-12 10:19:18
 * @Last Modified by:   user
-* @Last Modified time: 2017-05-27 18:28:58
+* @Last Modified time: 2017-05-31 13:31:55
 */
 
 (function() {
@@ -12,6 +12,27 @@
     var html = document.querySelector("html");          //获取html
     var width = html.getBoundingClientRect().width;   //获取html的宽度
     html.style.fontSize = width/20+ "px";                   //1000设计图  1rem = 50px;
+
+
+  // alert(window.devicePixelRatio) ;//自动显示 缩放倍数
+
+
+// // 监听屏幕方向变化，通过MediaQueryList对象的addListener方法
+// var mql = window.matchMedia('(orientation: portrait)');
+// console.log(mql);
+// function handleOrientationChange(mql) {
+// if(mql.matches) {
+// console.log('portrait'); // 打印竖屏
+// alert(0)
+// }else {
+// console.log('landscape'); // 打印横屏
+// // 打印日志
+// handleOrientationChange(mql);
+// // 监听屏幕模式的变化
+// mql.addListener(handleOrientationChange);
+
+// }
+// }
 
 
 
