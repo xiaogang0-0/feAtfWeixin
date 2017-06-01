@@ -2,12 +2,22 @@
 * @Author: user
 * @Date:   2017-05-12 10:19:18
 * @Last Modified by:   user
-* @Last Modified time: 2017-05-31 13:31:55
+* @Last Modified time: 2017-06-01 20:09:26
 */
 
 (function() {
   "use strict";
-  
+
+    window.addEventListener('orientationchange', function(event){
+          if ( window.orientation == 180 || window.orientation==0 ) {//竖屏事件处理
+               location.reload();//刷新页面
+               alert("竖屏");    
+          }
+          if( window.orientation == 90 || window.orientation == -90 ) {//横屏事件处理
+               location.reload();//刷新页面
+               alert("横屏");    
+          }
+      });
  //rem 适配:
     var html = document.querySelector("html");          //获取html
     var width = html.getBoundingClientRect().width;   //获取html的宽度
@@ -48,6 +58,7 @@
      var $parentList = $parent.find('section');
      var arr = [0,0,0];
       $btns.click(function(){//一级切换
+  
           var index = $(this).index();
           var num = $(document).height()-$('.rmkc-head').height();
 
@@ -98,7 +109,7 @@ function shizijianjie(){
     $btns.click(function(){//一级切换
           var index = $(this).index();
           var num = $(document).height()-$('.szjj-head').height();
-
+  alert(1)
           if(index ==2){
               index =1
           }

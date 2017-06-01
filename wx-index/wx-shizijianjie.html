@@ -100,54 +100,54 @@
 
 </body>
 <script type="text/javascript" src="js/jquery-1.10.2.min.js"></script>
-<script type="text/javascript" src="js/script.js"></script>
+<!-- <script type="text/javascript" src="js/script.js"></script> -->
 <script type="text/javascript">
 //师资简介的 搜索选项操作
 
 
 
 
-// (function(){
-//      var $parent = $('.szjj-head');             //整个tab的腹肌
-//      var $btns = $parent.find('.js-bnt');     //二级切换的父级按钮
-//      var $lists =$parent.find('.js-list ul');   // 下面对应的展开ul
-//      var $off = $parent .find('i');             // 图标标签
-//      var $parentList = $parent.find('.js-list');//二级切换外框
-//      var onoff = true;
+(function(){
+     var $parent = $('.szjj-head');             //整个tab的腹肌
+     var $btns = $parent.find('.js-bnt');     //二级切换的父级按钮
+     var $lists =$parent.find('.js-list ul');   // 下面对应的展开ul
+     var $off = $parent .find('i');             // 图标标签
+     var $parentList = $parent.find('.js-list');//二级切换外框
+     var onoff = true;
 
-//     $btns.click(function(){//一级切换
-//           var index = $(this).index();
-//           var num = $(document).height()-$('.szjj-head').height();
+    $btns.click(function(){//一级切换
+          var index = $(this).index();
+          var num = $(document).height()-$('.szjj-head').height();
+            alert(22222)
+          if(index ==2){
+              index =1
+          }
 
-//           if(index ==2){
-//               index =1
-//           }
-
-//           $parentList.css('height',num);//设置 显示遮罩高度
-//           $btns.removeClass('active');
-//           $(this).addClass('active');            //切换选中样式
-//           $('.js-list').removeClass("none");    //二级整体显示
-//           $lists.addClass('none');                //清洗二级全隐藏
-//           $off.removeClass('icon-shouqi').addClass('icon-zhankai');  //清洗标签图样式还原
-//           $lists.eq(index).removeClass('none') ;  //当前的显示
-//           $off.eq(index).removeClass('icon-zhankai').addClass("icon-shouqi"); //当前图标更换
+          $parentList.css('height',num);//设置 显示遮罩高度
+          $btns.removeClass('active');
+          $(this).addClass('active');            //切换选中样式
+          $('.js-list').removeClass("none");    //二级整体显示
+          $lists.addClass('none');                //清洗二级全隐藏
+          $off.removeClass('icon-shouqi').addClass('icon-zhankai');  //清洗标签图样式还原
+          $lists.eq(index).removeClass('none') ;  //当前的显示
+          $off.eq(index).removeClass('icon-zhankai').addClass("icon-shouqi"); //当前图标更换
                
-//           $parentList.on('click',function(){//点击空白区域隐藏
-//                 $(this).addClass('none')
-//                 $off.removeClass('icon-shouqi').addClass('icon-zhankai');  //清洗标签图样式还原
-//                 $btns.removeClass('active');   //清空当一级的样式     
-//           })
-//     })
+          $parentList.on('click',function(){//点击空白区域隐藏
+                $(this).addClass('none')
+                $off.removeClass('icon-shouqi').addClass('icon-zhankai');  //清洗标签图样式还原
+                $btns.removeClass('active');   //清空当一级的样式     
+          })
+    })
     
-//      $lists.find('li').click(function(){//二级下拉的点击  数据接口 从这里面走
-//             var index1 = $(this).parent('ul').index();  
-//             $btns.eq(index1).find('em').html(this.innerHTML)
+     $lists.find('li').click(function(){//二级下拉的点击  数据接口 从这里面走
+            var index1 = $(this).parent('ul').index();  
+            $btns.eq(index1).find('em').html(this.innerHTML)
 
-//             console.log(index1,$(this).index(),)//前面0 走科目数据 是一 走性别数据
+            console.log(index1,$(this).index(),)//前面0 走科目数据 是一 走性别数据
                
-//      })
+     })
 
-// })()
+})()
 
 
 

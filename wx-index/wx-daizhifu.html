@@ -2,79 +2,87 @@
 <html lang="en">
 <head>
 <meta charset="utf-8">
-<meta name="viewport" content="width=device-width,initial-scale = 1,minimum-scale = 1, maximum-scale = 1, user-scalable = no" />
+<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, minimum-scale=1, user-scalable=no, minimal-ui">
 <meta name="format-detection" content="telephone=no" />
 <meta name="apple-mobile-web-app-capable" content="yes" />
-<meta n ame="apple-mobile-web-app-status-bar-style" content="black" />
+<meta name="apple-mobile-web-app-status-bar-style" content="black" />
+
 <link rel="stylesheet" type="text/css" href="css/h5style.css">
-<link rel="stylesheet" href="../fontss/iconfont.css">
 <title>待支付订单</title>
 </head>
 <style type="text/css">
-
-
-
+/*私有样式*/
+.rmkc-list ul li {padding: 0;}
 </style>
 <body>
 
 <div class="dzf-head">结算<span>5分30秒</span></div>
-
-
 <div class="rmkc-list dzf-list">
   <ul>
-    <li class="">
-      <!-- <a href="wx-remenkecheng1.html"> -->
-        <img src="img/hot-list1.jpg" alt=""> 
-        <div class="rmkc-cont">
-            <h3>剑桥少儿英语串讲班</h3>
-            刘明<span>英语</span><br>
-            2017-05-17 开班<br>
-            周六14:00-16:00 开课<br>
-            高思校区
+    <li class="line-wrapper">
+      <div class="line-scroll-wrapper">
+        <div class="line-normal-wrapper">
+             <a href="wx-remenkecheng1.html">
+                <img src="img/hot-list1.jpg" alt=""> 
+                <div class="rmkc-cont">
+                    <h3>剑桥少儿英语串讲</h3>
+                    刘明<span>英语</span><br>
+                    2017-05-17 开班<br>
+                    周六14:00-16:00 开课<br>
+                    高思校区
+                </div>
+                <div class="rmkc-right">
+                  ￥3200.00 
+                </div>
+             </a>
         </div>
-        <div class="rmkc-right">
-          ￥320000.00 
-        </div>
-        <i class="icon iconfont icon-close"></i>
+        <div class="line-btn-delete"><button>删除</button></div>
+      </div>
+    </li>
+    <li class="line-wrapper">
+      <div class="line-scroll-wrapper">
+        <div class="line-normal-wrapper">
 
-     <!--  </a> -->
+             <a href="wx-remenkecheng1.html">
+                <img src="img/hot-list1.jpg" alt=""> 
+                <div class="rmkc-cont">
+                    <h3>剑桥少儿英语串讲班</h3>
+                    刘明<span>英语</span><br>
+                    2017-05-17 开班<br>
+                    周六14:00-16:00 开课<br>
+                    高思校区
+                </div>
+                <div class="rmkc-right">
+                  ￥3200.00 
+                </div>
+             </a>
+        </div>
+        <div class="line-btn-delete"><button>删除</button></div>
+      </div>
     </li>
-    <li class="">
-      <!-- <a href="wx-remenkecheng1.html"> -->
-        <img src="img/hot-list1.jpg" alt=""> 
-        <div class="rmkc-cont">
-            <h3>剑桥少儿英语串讲班</h3>
-            刘明<span>英语</span><br>
-            2017-05-17 开班<br>
-            周六14:00-16:00 开课<br>
-            高思校区
+    <li class="line-wrapper">
+      <div class="line-scroll-wrapper">
+        <div class="line-normal-wrapper">
+          <div class="line-normal-left-wrapper">
+             <a href="wx-remenkecheng1.html">
+                <img src="img/hot-list1.jpg" alt=""> 
+                <div class="rmkc-cont">
+                    <h3>剑桥少儿英语串讲班</h3>
+                    刘明<span>英语</span><br>
+                    2017-05-17 开班<br>
+                    周六14:00-16:00 开课<br>
+                    高思校区
+                </div>
+                <div class="rmkc-right">
+                  ￥3200.00 
+                </div>
+             </a>
+          </div>
         </div>
-        <div class="rmkc-right">
-          ￥320000.00 
-        </div>
-        <i class="icon iconfont icon-close"></i>
-
-     <!--  </a> -->
+        <div class="line-btn-delete"><button>删除</button></div>
+      </div>
     </li>
-    <li class="">
-      <!-- <a href="wx-remenkecheng1.html"> -->
-        <img src="img/hot-list1.jpg" alt=""> 
-        <div class="rmkc-cont">
-            <h3>3剑桥少儿英语串讲班</h3>
-            刘明<span>英语</span><br>
-            2017-05-17 开班<br>
-            周六14:00-16:00 开课<br>
-            高思校区
-        </div>
-        <div class="rmkc-right">
-          ￥320000.00 
-        </div>
-        <i class="icon iconfont icon-close"></i>
-     <!--  </a> -->
-    </li>
-  
   </ul>
-
 </div>
 
 <div class="rmkc-btn"><a href="javascript:;">付款</a></div>
@@ -84,11 +92,93 @@
 <script type="text/javascript" src="js/script.js"></script>
 
 <script type="text/javascript">
-    var $btn = $(".dzf-list").find('i');
-    var $title = $(".dzf-head");
-    $btn.click(function(){
-        $(this).parent('li').addClass("none");
-    })
+$(document).ready(function(e) { 
+
+         deleta()  //向左滑动删除
+
+
+         $(window).resize(function() {
+            location.reload();//刷新页面
+            // deleta();//重新计算宽度
+        });
+
+
+        //向左滑动删除事件
+         function deleta(){   
+                var $btn = $(".line-btn-delete");//删除键
+                $btn.click(function(){//这里可以走ajax 
+                    $(this).parents('.line-wrapper').addClass("none");
+                })
+
+                // 设定每一行的宽度=屏幕宽度+按钮宽度
+                $(".line-scroll-wrapper").width($(".line-wrapper").width() + $(".line-btn-delete").width()+10);
+                // 设定常规信息区域宽度=屏幕宽度
+                $(".line-normal-wrapper").width($(".line-wrapper").width());
+                // 设定文字部分宽度（为了实现文字过长时在末尾显示...）
+                $(".line-normal-msg").width($(".line-normal-wrapper").width() - 280);
+
+                // 获取所有行，对每一行设置监听
+                var lines = $(".line-normal-wrapper");
+                var len = lines.length; 
+                var lastX, lastXForMobile;
+                var pressedObj;  //用于记录被按下的对象  当前左滑的对象
+                var lastLeftObj;   //用于记录被按下的对象  上一个左滑的对象
+                var start;// 用于记录按下的点
+                var btn = $('.line-btn-delete');//删除按钮
+                // 网页在移动端运行时的监听
+                for (var i = 0; i < len; ++i) {
+                    lines[i].addEventListener('touchstart', function(e){
+                        lastXForMobile = e.changedTouches[0].pageX;
+                        pressedObj = this; // 记录被按下的对象 
+                        var touches = event.touches[0];// 记录开始按下时的点
+                        start = { 
+                            x: touches.pageX, // 横坐标
+                            y: touches.pageY  // 纵坐标
+                        };
+                    });
+
+                    lines[i].addEventListener('touchmove',function(e){
+                        // 计算划动过程中x和y的变化量
+                        var touches = event.touches[0];
+                        delta = {
+                            x: touches.pageX - start.x,
+                            y: touches.pageY - start.y
+                        };
+
+                        // 横向位移大于纵向位移，阻止纵向滚动
+                        if (Math.abs(delta.x) > Math.abs(delta.y)) {
+                            event.preventDefault();
+                        }
+                    });
+
+                    lines[i].addEventListener('touchend', function(e){
+                 
+                        if (lastLeftObj && pressedObj != lastLeftObj) { // 点击除当前左滑对象之外的任意其他位置
+                            $(lastLeftObj).animate({marginLeft:"0"}, 200); // 右滑
+                            lastLeftObj = null; // 清空上一个左滑的对象
+                           
+                        }
+                        var diffX = e.changedTouches[0].pageX - lastXForMobile;
+                         var btnwidth = btn.width();
+                     
+                        if (diffX < -150) {
+                            $(pressedObj).animate({'marginLeft':-btnwidth+"px"}, 200); // 左滑
+                            // $(pressedObj).animate({marginLeft:"-132px"}, 500); // 左滑
+                            lastLeftObj && lastLeftObj != pressedObj && 
+                                $(lastLeftObj).animate({marginLeft:"0"}, 200); // 已经左滑状态的按钮右滑
+                            lastLeftObj = pressedObj; // 记录上一个左滑的对象
+                        } else if (diffX > 150) {
+                          if (pressedObj == lastLeftObj) {
+                            $(pressedObj).animate({marginLeft:"0"}, 200); // 右滑
+                            lastLeftObj = null; // 清空上一个左滑的对象
+                          }
+                        }
+                    });
+                }
+        }
+    
+});
+
 
 
 </script>
