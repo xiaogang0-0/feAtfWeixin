@@ -2,7 +2,11 @@
 <html lang="en">
 <head>
 <meta charset="utf-8">
-<meta name="viewport" content="width=device-width, initial-scale=1.0, minimum-scale=1.0, maximum-scale=1.0">
+<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, minimum-scale=1, user-scalable=no, minimal-ui">
+<meta name="format-detection" content="telephone=no" />
+<meta name="apple-mobile-web-app-capable" content="yes" />
+<meta name="apple-mobile-web-app-status-bar-style" content="black" />
+
 <link rel="stylesheet" type="text/css" href="css/h5style.css">
 <title>师资简介</title>
 </head>
@@ -100,25 +104,22 @@
 
 </body>
 <script type="text/javascript" src="js/jquery-1.10.2.min.js"></script>
-<!-- <script type="text/javascript" src="js/script.js"></script> -->
+<script type="text/javascript" src="js/script.js"></script>
 <script type="text/javascript">
 //师资简介的 搜索选项操作
 
 
 
-
-(function(){
      var $parent = $('.szjj-head');             //整个tab的腹肌
      var $btns = $parent.find('.js-bnt');     //二级切换的父级按钮
      var $lists =$parent.find('.js-list ul');   // 下面对应的展开ul
      var $off = $parent .find('i');             // 图标标签
      var $parentList = $parent.find('.js-list');//二级切换外框
-     var onoff = true;
 
     $btns.click(function(){//一级切换
           var index = $(this).index();
           var num = $(document).height()-$('.szjj-head').height();
-            alert(22222)
+            alert('测试本页')
           if(index ==2){
               index =1
           }
@@ -143,11 +144,13 @@
             var index1 = $(this).parent('ul').index();  
             $btns.eq(index1).find('em').html(this.innerHTML)
 
-            console.log(index1,$(this).index(),)//前面0 走科目数据 是一 走性别数据
-               
+            console.log(index1,$(this).index(),)//前面0 走科目数据 是一 走性别数据   
      })
 
-})()
+
+
+
+
 
 
 

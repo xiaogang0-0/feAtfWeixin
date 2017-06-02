@@ -2,7 +2,7 @@
 * @Author: xiaogang
 * @Date:   2017-05-12 10:18:24
 * @Last Modified by:   user
-* @Last Modified time: 2017-05-31 15:09:12
+* @Last Modified time: 2017-06-02 19:13:49
 */
 @charset "utf-8";
 
@@ -11,9 +11,9 @@
 @import url('../fontss/iconfont.css');/*阿里图标*/
 
 /**初始化***/
-body,dl,dd,p,h1,h2,h3,h4,h5,h6{margin:0;font-size:12px;}
+body,dl,dd,p,h1,h2,h3,h4,h5,h6{margin:0;font-size:12px;font-family: '微软雅黑'; }
 ol,ul   {margin:0;padding:0;list-style:none;}
-a   {text-decoration:none;} 
+a {text-decoration:none;} 
 img  { border:none;vertical-align: top;}
 .clearFix:after { content:"";display:block;clear:both;} 
 .clearFix{zoom:1;}
@@ -85,11 +85,17 @@ mark {  background: none;}
 
 /*按钮开关样式*/
 .multi-switch{width:50px;user-select:none;-webkit-backface-visibility:hidden;-webkit-touch-callout:none;-webkit-user-select:none;-khtml-user-select:none;-moz-user-select:none;-ms-user-select:none}.multi-switch *{-webkit-transition:all ease 0.3s;-moz-transition:all ease 0.3s;-ms-transition:all ease 0.3s;-o-transition:all ease 0.3s;transition:all ease 0.3s}.multi-switch .switch-content{background:none;background-color:#D97C6F;height:31px;position:relative;cursor:pointer;border-radius:31px   ;-moz-border-radius:31px   ;-webkit-border-radius:31px   ;-ms-border-radius:31px   }.multi-switch .switch-content .switch-circle{background:#FFF;width:29px;height:29px;position:absolute;top:1px;left:0%;z-index:1;margin-left:1px;border-radius:29px   ;-moz-border-radius:29px   ;-webkit-border-radius:29px   ;-ms-border-radius:29px   ;box-shadow: 3px 3px 0px rgba(0,0,0,0.1)  ;-moz-box-shadow: 3px 3px 0px rgba(0,0,0,0.1)  ;-webkit-box-shadow: 3px 3px 0px rgba(0,0,0,0.1)  }.multi-switch .switch-content .info-slide{position:absolute;z-index:2;width:50%;height:100%;display:block}.multi-switch .switch-content .info-slide.active{right:0;border-radius:0 31px 31px 0;-moz-border-radius:0 31px 31px 0;-webkit-border-radius:0 31px 31px 0;-ms-border-radius:0 31px 31px 0}.multi-switch .switch-content .info-slide.disable{left:0;border-radius:31px 0 0 31px;-moz-border-radius:31px 0 0 31px;-webkit-border-radius:31px 0 0 31px;-ms-border-radius:31px 0 0 31px}.multi-switch .switch-content.active{background-color:#5DC177}.multi-switch .switch-content.active .switch-circle{left:100%;margin-left:-30px}.multi-switch .switch-content.disabled{background-color:#CCC;cursor:default}.multi-switch .switch-content.initial{background-color:#dddddd}.multi-switch .switch-content.initial .switch-circle{left:50%;margin-left:-14.5px}.multi-switch input{display:none}
+
+
+
+
+
+
+
+
 /*上传图片input */
 #file_upload {display: none;}
 
 
 
-.w1200 {border: 1px solid #000;}
-.h5div {width: 351px; height: 700px;background: url(../img/phone.png) no-repeat 0 30px;}
 

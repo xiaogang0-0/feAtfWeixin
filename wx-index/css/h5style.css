@@ -2,7 +2,7 @@
 * @Author: xiaogang
 * @Date:   2017-05-12 14:10:33
 * @Last Modified by:   user
-* @Last Modified time: 2017-06-01 19:44:20
+* @Last Modified time: 2017-06-02 14:46:03
 */
 @import url('../../fontss/iconfont.css');/*阿里图标*/
 
@@ -128,8 +128,8 @@ img{ display: block; max-width: 100%;}
 .nav-list li .bj9{background: url() repeat-x;}
 .nav-list li .bj10{background: url() repeat-x;}*/
 
-.hot-title { padding:0 0 0rem 0.76rem;height: 1.5rem;font-size: 0.54rem;line-height: 1.5rem;background: #f4f7fc;color: #999899;}
-.hot-title i{color: #ff0000;padding-right: 0.16rem;font-size: 0.54rem;}
+.hot-title { padding:0 0 0rem 0.76rem;height: 1.5rem;font-size: 0.7rem;line-height: 1.5rem;background: #f4f7fc;color: #999899;}
+.hot-title i{color: #ff0000;padding-right: 0.16rem;font-size: 0.7rem;}
 .hot-list{background: #f4f7fc;}
 .hot-list li {background: #fff; padding: 0.73rem 0 0.7rem 0.76rem;margin-bottom: 0.42rem; overflow: hidden;}
 .hot-list li a { display: block; overflow: hidden;}
@@ -164,7 +164,7 @@ img{ display: block; max-width: 100%;}
 .szjj-list .man i, .szjj1-cont .man i {color:#1da0f1;margin-left: 0.44rem;}
 .szjj-list .girl i, .szjj1-cont .girl i {color:#f09ec2;margin-left: 0.44rem;}
 .szjj-list .man-list,.szjj1-cont .man-list { float:left; border: 0.02rem solid #1da0f1; color: #1da0f1; line-height: 1rem;padding: 0 0.18rem;margin-right: 0.3rem;border-radius: 0.2rem;margin-top: 0.3rem;}
-.szjj-list .girl-list,.szjj1-cont .girl-list { float:left; border: 0.02rem solid #ef62a0; color: #ef62a0; line-height: 1rem;padding: 0 0.18rem;margin-right: 0.3rem;border-radius: 0.2rem;margin-top: 0.2rem;}
+.szjj-list .girl-list,.szjj1-cont .girl-list { float:left; border: 0.02rem solid #ef62a0; color: #ef62a0; line-height: 1rem;padding: 0 0.18rem;margin-right: 0.3rem;border-radius: 0.2rem;margin-top: 0.3rem;}
 .szjj-list .man, .szjj1-cont .man {color:#3189ca;}
 .szjj-list .girl, .szjj1-cont .girl  {color:#ef62a0;}
 .szjj-list .cont, .szjj1-cont  .cont { float:left ;  color: #777777; font-size: 0.72rem;line-height: 1.52rem;max-width: 11rem; overflow: hidden; text-overflow: ellipsis;white-space: nowrap;width: 20em;}
@@ -177,7 +177,7 @@ img{ display: block; max-width: 100%;}
 .szjj-head i{margin-left: 2.06rem;color: #bbb;}
 
 .szjj-head section {position: absolute; left: 0; top: 2.68rem;width: 100%;z-index: 999;  background: rgba(0,0,0,0.8);}
-.szjj-head ul{ border-top: 0.02rem solid #000;background: #fff;padding:0 1.12rem 1rem;}
+.szjj-head ul{ border-top: 0.02rem solid #626365;background: #fff;padding:0 1.12rem 1rem;}
 .szjj-head ul li {background:#fff; font-size: 0.84rem;line-height: 2.16rem; border-bottom: 0.02rem solid #dbd8d8;}
 .szjj-head ul li:active ,.szjj-head ul li:hover, .szjj-head .active {color: #3189ca;}
 
@@ -208,7 +208,7 @@ img{ display: block; max-width: 100%;}
 
 .rmkc-head div { float: left;padding: 0.48rem 0;width:  9.96rem; font-size: 0.64rem; text-align: center; position: relative;background: #fff;line-height: 1.28rem;}
 .rmkc-head section {position: absolute; left: 0; top: 2.68rem;width: 100%;z-index: 999;  background: rgba(0,0,0,0.8);}
-.rmkc-head section ul { border-top: 0.02rem solid #000;background: #fff;padding:0 1.12rem 1rem;}
+.rmkc-head section ul { border-top: 0.02rem solid #626365;background: #fff;padding:0 1.12rem 1rem;}
 .rmkc-head section ul li {background:#fff; font-size: 0.84rem;line-height: 2.16rem; border-bottom: 0.02rem solid #dbd8d8;}
 .rmkc-head ul li:active ,.szjj-head ul li:hover {color: #5699d0;}
 .rmkc-list {float: left;width: 100%;position: relative;}
@@ -234,8 +234,8 @@ img{ display: block; max-width: 100%;}
 
 
 /*热门课程详情页*/
-.rmkc-btn{ position: fixed; left: 0; bottom: -0.02rem; right: 0; height: 2.66rem; text-align: center;}
-.rmkc-btn a {display: block;font-size: 0.96rem;line-height: 2.66rem;background: #3189ca;color: #ddd;}
+.rmkc-btn{ position: fixed; left: 0; bottom: -0.02rem; right: 0; text-align: center;}
+.rmkc-btn a {display: block;font-size: 0.96rem;line-height: 2.66rem;height: 2.66rem;background: #3189ca;color: #ddd;}
 .rmkc-btn a:active ,.rmkc-btn a:hover {background: #0087ff;}
 
 .rmkc1-list .rmkc-cont p{ font-size:0.72rem ;line-height: 2.16rem;color: #e71f19;}
@@ -271,11 +271,12 @@ img{ display: block; max-width: 100%;}
 .lsxxhd-head li ,.lsxxhd-cont li,.xxhd-new .xshd-cont li {overflow: hidden; padding: 0rem 0.76rem 0rem 0.76rem; border-bottom:0.02rem solid #e1dfdf ;box-sizing:border-box;}
 .lsxxhd-head span, .lsxxhd-cont span ,.xxhd-new .xshd-cont span{float: left; margin-right: 1.1rem; color: #bbbbbb; width:3.5rem; text-align: right;}
 .lsxxhd-head input, .lsxxhd-cont p {float: left; font-size: 0.84rem; height: 2.1rem; width: 10.8rem;   border: none;/*color: #a0a0a0;*/}
-.lsxxhd-head em {float: left; width: 2.88rem; text-align: right;border-left: 0.06rem solid #e6e5e5; color: #1da0f1;}
-.lsxxhd-head em:active {background: rgba(0,0,0,0.1);}
+.lsxxhd-head em {float: left; width: 2.88rem; text-align: right;border-left: 0.06rem solid #e6e5e5; color: #1da0f1; }
+.lsxxhd-head em:active{ color: green;}
 .lsxxhd-cont {background: #fff; font-size: 0.84rem;line-height: 1.28rem;}
 .lsxxhd-ts  {color: #e71f19; padding-left: 0.5rem;font-size: 0.72rem; height:1.44rem;line-height: 1.44rem;}
-
+.lsxxhd-cont span{ line-height: 2.1rem;}
+.lsxxhd-cont p { line-height: 2.1rem;}
 
 
 /*信息核对信息页-新生核对*/
@@ -307,7 +308,7 @@ img{ display: block; max-width: 100%;}
 .zhym-title ul span {color: #777777;}
 .zhym-title ul li:nth-of-type(1),.zhym-title ul li:nth-of-type(3),.zhym-title ul li:nth-of-type(5) {width: 10.8rem;}
 
-.zfym-tishi{ overflow: hidden;width: 100%;box-sizing:border-box;height: 2.4rem;line-height: 2.4rem; font-size: 0.9rem; text-align: center;background: #fff;color: #555555;position: absolute;left: 0; bottom: 2.64rem;}
+.zfym-tishi{ overflow: hidden;width: 100%;box-sizing:border-box;height: 2.4rem;line-height: 2.4rem; font-size: 0.9rem; text-align: center;background: #fff;color: #555555;position: fixed;left: 0; bottom: 2.64rem;}
 .zfym-tishi span { margin-left: 0.44rem;color:#e71f19;line-height: 1.66rem; font-size: 0.9rem;font-weight: bold;}
 
 /*支付成功*/

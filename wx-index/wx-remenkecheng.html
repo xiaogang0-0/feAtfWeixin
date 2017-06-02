@@ -2,9 +2,12 @@
 <html lang="en">
 <head>
 <meta charset="utf-8">
-<meta name="viewport" content="width=device-width, initial-scale=1.0, minimum-scale=1.0, maximum-scale=1.0">
+<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, minimum-scale=1, user-scalable=no, minimal-ui">
+<meta name="format-detection" content="telephone=no" />
+<meta name="apple-mobile-web-app-capable" content="yes" />
+<meta name="apple-mobile-web-app-status-bar-style" content="black" />
+
 <link rel="stylesheet" type="text/css" href="css/h5style.css">
-<link rel="stylesheet" href="../fontss/iconfont.css">
 <title>热门课程</title>
 </head>
 <style type="text/css">
@@ -110,7 +113,6 @@
      var $parentList = $parent.find('section');
      var arr = [0,0,0];
       $btns.click(function(){//一级切换
-        alert(999)
           var index = $(this).index();
           var num = $(document).height()-$('.rmkc-head').height();
 
@@ -124,13 +126,11 @@
           $off.eq(index).removeClass('icon-zhankai').addClass("icon-shouqi"); //当前图标更换
     })
 
-
       $lists.find('li').click(function(){//二级下拉的点击 
             var index1 = $(this).parent('ul').index();  
             $btns.eq(index1).find('em').html(this.innerHTML);
             arr[index1] = this.innerHTML
-             // console.log(index1,$(this).index(),arr)
-               
+             // console.log(index1,$(this).index(),arr)     
      })
 
     $parentList.on('click',function(){//点击空白区域隐藏
@@ -139,14 +139,9 @@
             $btns.removeClass('active');   //清空当一级的样式         
       })
 
-    
-    $search.on('click',function(){//点击搜索时间的接口
-        console.log(arr)
-    })
-
-
-
-
+    // $search.on('click',function(){//点击搜索时间的接口
+    //     console.log(arr)
+    // })
 
 
 

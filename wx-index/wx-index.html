@@ -4,8 +4,8 @@
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, minimum-scale=1, user-scalable=no, minimal-ui">
 <meta name="format-detection" content="telephone=no" />
-<meta name="apple-mobile-web-app-capable" content="yes" />
-<meta n ame="apple-mobile-web-app-status-bar-style" content="black" />
+<meta name="apple-mobile-web-app-capable" content="yes" 。0/>
+<meta name="apple-mobile-web-app-status-bar-style" content="black" />
 <!-- banner -->
 <link rel="stylesheet" type="text/css" href="./slick/slick.css">
 <link rel="stylesheet" type="text/css" href="./slick/slick-theme.css">
@@ -13,9 +13,7 @@
 <title>教师系统学生微信短助手</title>
 </head>
 <style type="text/css">
-
-
-
+ 
 </style>
 <body>
 <div class="nav-logo">
@@ -23,16 +21,7 @@
     <img src="img/logo.png">
   </a>
 </div>
-<!-- 
-<div class="banner banner1">
-    <ul class="clearFix">
-        <li><a href="###"><img src="img/banner0.jpg" alt=""></a></li>
-        <li><a href="###"><img src="img/banner0.jpg" alt=""></a></li>
-        <li><a href="###"><img src="img/banner0.jpg" alt=""></a></li>
-        <li><a href="###"><img src="img/banner0.jpg" alt=""></a></li>
-        <li><a href="###"><img src="img/banner0.jpg" alt=""></a></li>
-    </ul>
-</div> -->
+
 
 <section class="lazy">
     <div>
@@ -128,13 +117,17 @@
 
 
 <script src="./slick/slick.js" type="text/javascript" charset="utf-8"></script>
-
-
 <script type="text/javascript" src="js/script.js"></script>
 <script type="text/javascript">
 (function(){
+$(window).resize(function() {
+    banner();
+});
+
 //轮播
- $(".lazy").slick({
+banner();
+function banner(){
+    $(".lazy").slick({
     lazyLoad: 'ondemand', // ondemand progressive anticipated
     infinite: true,//循环播放
     autoplay:true,
@@ -142,10 +135,12 @@
     cssEase:'ease',
     // fade:true,
     pauseOnHover: true,
-    useCSS:true
+    useCSS:true,
   });
-
 //参数详解：http://www.jq22.com/jquery-info406
+
+}
+ 
 
 
 

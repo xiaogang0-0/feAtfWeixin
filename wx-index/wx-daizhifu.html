@@ -90,7 +90,6 @@
 
 <script type="text/javascript" src="js/jquery-1.10.2.min.js"></script>
 <script type="text/javascript" src="js/script.js"></script>
-
 <script type="text/javascript">
 $(document).ready(function(e) { 
 
@@ -154,7 +153,7 @@ $(document).ready(function(e) {
                     lines[i].addEventListener('touchend', function(e){
                  
                         if (lastLeftObj && pressedObj != lastLeftObj) { // 点击除当前左滑对象之外的任意其他位置
-                            $(lastLeftObj).animate({marginLeft:"0"}, 200); // 右滑
+                            $(lastLeftObj).animate({marginLeft:"0"}, 100); // 右滑
                             lastLeftObj = null; // 清空上一个左滑的对象
                            
                         }
@@ -162,14 +161,14 @@ $(document).ready(function(e) {
                          var btnwidth = btn.width();
                      
                         if (diffX < -150) {
-                            $(pressedObj).animate({'marginLeft':-btnwidth+"px"}, 200); // 左滑
+                            $(pressedObj).animate({'marginLeft':-btnwidth+"px"}, 100); // 左滑
                             // $(pressedObj).animate({marginLeft:"-132px"}, 500); // 左滑
                             lastLeftObj && lastLeftObj != pressedObj && 
-                                $(lastLeftObj).animate({marginLeft:"0"}, 200); // 已经左滑状态的按钮右滑
+                                $(lastLeftObj).animate({marginLeft:"0"}, 100); // 已经左滑状态的按钮右滑
                             lastLeftObj = pressedObj; // 记录上一个左滑的对象
                         } else if (diffX > 150) {
                           if (pressedObj == lastLeftObj) {
-                            $(pressedObj).animate({marginLeft:"0"}, 200); // 右滑
+                            $(pressedObj).animate({marginLeft:"0"}, 100); // 右滑
                             lastLeftObj = null; // 清空上一个左滑的对象
                           }
                         }
