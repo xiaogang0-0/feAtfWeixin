@@ -7,48 +7,18 @@
 <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0">
 <meta name="keywords" content="">
 <meta name="description" content="">
+<link rel="stylesheet" type="text/css" href="css/bootstrap.min.css">  
 <link rel="stylesheet" type="text/css" href="css/style.css">
+
+<title>主页-风格</title>
 <!-- HTML5 shim and Respond.js IE8 support of HTML5 elements and media queries -->
 <!--[if lt IE 9]>
 <script src="js/html5shiv.js"></script>
 <script src="js/respond.min.js"></script>
 <![endif]-->
 <style>
-.border{ border:1px solid #000;/* */}
 
 
-
-
-
-/*头部*/
-.index-head {padding: 19px 25px 18px 28px;background: #45c8dc;height: 92px;min-width: 450px;}
-.index-head .logo{float: left; padding: 5px 0;margin-right: 27px;}
-.index-head img { width: 36px; height: 45px;}
-.index-head h2 { float: left;color: #ffffff;padding-left:23px; font: 24px/55px '微软雅黑';  background: url(img/border.jpg) no-repeat 0 0;}
-.index-head a {display:inline-block;padding-bottom:-5px;}
-.index-head .user{ float: right;color: #fff;font-size:14px; line-height: 55px;}
-.index-head .user i { margin-left: 11px;}
-/*左侧导航*/
-.index-leftNav { float: left;padding-top: 26px; background: #e7f3f5;border-right: 1px solid #cfcfcf;  -webkit-box-shadow: 2px 0px 2px #cfcfcf;  -moz-box-shadow: 2px 0px 2px #cfcfcf;  box-shadow: 2px 0px 2px #cfcfcf; }
-.index-leftNav li {width: 90px; height: 69px;box-sizing: border-box;text-align: center;border-left: 2px solid #e7f3f5; color:#9fa9c2;margin-bottom: 21px;}
-
-.index-leftNav i {font-size:17px;}
-.index-leftNav p{font-size:14px; line-height: 28px; }
-
-.index-leftNav li a{display: block; color:#9fa9c2; text-decoration:none;font-size: 24px;}
-.index-leftNav li:active,.index-leftNav .active {border-color: #45c8dc;}
-.index-leftNav li:active a,.index-leftNav .active a { color: #45c8dc; text-decoration:none;}
-
-
-
-
-/*右侧手机预览*/
-.rightPreview {float: right;width: 483px;background: #1e4468 url(img/previewBJ.jpg) no-repeat 0 bottom;}
-.index-h5div {width: 350px; height: 672px; background: url(img/phone.png) no-repeat 0 0px;margin: 78px 0 0 73px;position: relative;      }
-#wgwiframe{height: 509px; width: 340px;position:absolute; top: 89px; left: 5px;overflow-x: hidden;}
-.rightPreview .h5title{position: relative;height: 34px; width: 340px;position:absolute; top: 55px; left: 5px; font-size: 14px;line-height: 34px;color: #fefefe;background: #45c8dc;text-align: center;}
-.rightPreview .h5title i {position: absolute;top:5px;right:4px ; width: 25px; height: 25px; font-size: 25px; }
-.rightPreview .h5title img {position: absolute; top: 34px; right: 0;width: 100px; height: 100px;z-index: 99; }
 </style>
 </head>
 <body>
@@ -63,46 +33,197 @@
   </a>
   <div class="user">
     <span>薛晓慧</span>
-    <i class="fa fa-angle-down"></i>
-    <!-- <ul>预留下拉位置
-      <li class="c-999"> 退出 </li>
-    </ul> -->
+    <i class="fa fa-angle-down" id="user-btn"></i>
+    <ul class="none">
+      <li data-toggle="modal" href="#tjxy-addKechengModal"> 
+        <i class="icon iconfont icon-xiugaimima"></i>
+        修改密码 
+      </li>
+      <li> 
+        <i class="icon iconfont icon-tuichu"></i>
+        退出登陆 
+      </li>
+    </ul>
   </div>
 </div>
-
 <!-- 左侧导航 -->
 <ul class="index-leftNav">
     <li class="active">
       <a href="javascript:;">
-        <i class="icon iconfont icon-school"></i>
+        <i class="icon iconfont icon-weixinwang"></i>
         <p>微信官网</p>
       </a>
-        
     </li>
     <li>
       <a href="javascript:;">
-        <i class="icon iconfont icon-school"></i>
-        <p>招生秀</p>
-      </a>
-        
+        <i class="icon iconfont icon-xiaoshoupad"></i>
+        <p>销售pad</p>
+      </a>  
     </li>
 </ul>
-
-<!-- 中间内容 -->
-<div class="index-cont">
-  
-</div>
-
 <!-- 右侧预览 -->
-
 <div class="rightPreview">
   <div class="index-h5div">
     <div class="h5title ">
       预览
-      <i class="fr fa fa-angle-down border"></i>
-      <img src="img/previewBJ.jpg" alt="" class="border">
+      <i class="icon iconfont icon-erweima" id="js-btn"></i>
+      <div id="js-ma">
+        <img src="img/saoma.png" alt="" class="">
+      </div>
+      
     </div>
     <iframe id="wgwiframe" name="wgwiframe"  src="wx-index/wx-index.html" frameborder="0" class=""></iframe>
+  </div>
+</div>
+
+<!-- 中间内容 -->
+<div class="index-cont">
+  <ul class="cNav clearFix">
+    <li class="active">
+        <a href="index.html">风格</a>
+        <ul class="cNav-list  clearFix">
+            <li class="active">主题</li>
+            <li>横幅</li>
+            <li>欢迎页</li>
+        </ul>
+    </li>
+    <li>
+        <a href="xiangmu.html">项目</a>
+    </li>
+    <li>
+        <a href="neirong.html">内容</a>
+        <!-- <ul class="cNav-list clearFix">
+            <li class="active">热门课程</li>
+            <li>最新活动</li>
+            <li>联系我们</li>
+            <li>优秀师资</li>
+            <li>投诉建议</li>
+        </ul> -->
+    </li>
+    <li>
+        <a href="xitong.html">系统</a>
+      
+    </li>
+  </ul>
+  <!-- 风格_主题 -->
+  <div class="manner-trunk ">
+        <ul class="trunk-title clearFix">
+            <li class="">保存</li>
+        </ul>
+        <!-- <p class="tishi">已选横幅</p> -->
+        <ul class="zhuti clearFix">
+            <li><img src="img/index.jpg" alt=""></li>
+            <li><img src="img/index.jpg" alt=""></li>
+            <li><img src="img/index.jpg" alt=""></li>
+            <li><img src="img/index.jpg" alt=""></li>
+            <li><img src="img/index.jpg" alt=""></li>
+        </ul>
+  </div>
+  <!-- 风格_横幅 -->
+  <div class="manner-trunk1 ">
+      <ul class="trunk-title clearFix">
+            <li>
+              <label class="file_upload">添加图片
+                <input type="file"  id="file_upload"/>
+              </label>
+           </li>
+            <li data-toggle="modal" href="#fg-tabModal">横幅切换效果</li>
+            <li class="">保存</li>
+      </ul>
+      <p class="tishi">已选横幅</p>
+      <ul class="hengfu clearFix">
+          <li>
+            <img src="img/hengfu.jpg" alt="">
+            <i class="icon iconfont icon-shanchu"></i>
+            <i class="icon iconfont icon-bianji"></i>
+          </li>
+          <li>
+            <img src="img/hengfu.jpg" alt="">
+            <i class="icon iconfont icon-shanchu"></i>
+            <i class="icon iconfont icon-bianji"></i>
+          </li>
+           <li>
+            <img src="img/hengfu.jpg" alt="">
+             <i class="icon iconfont icon-shanchu"></i>
+            <i class="icon iconfont icon-bianji"></i>
+          </li>
+          
+          <li><img src="" alt=""></li>
+          <li><img src="" alt=""></li>
+      </ul>
+      <ul class="hengfu  hengfu-con clearFix">
+          <li>
+            <img src="img/hengfu.jpg" alt="">
+            <i class="icon iconfont icon-shanchu"></i>
+          </li>
+          <li>
+            <img src="img/hengfu.jpg" alt="">
+             <i class="icon iconfont icon-shanchu"></i>
+          </li>
+          <li>
+            <img src="img/hengfu.jpg" alt="">
+             <i class="icon iconfont icon-shanchu"></i>
+          </li>
+          <li>
+            <img src="img/hengfu.jpg" alt="">
+             <i class="icon iconfont icon-shanchu"></i>
+          </li>
+          <!-- 这个是上传图片 添加的模板 -->
+          <li class="image_container">
+            <img  id="preview" src="img/hengfu.jpg" alt="">
+            <i class="icon iconfont icon-shanchu"></i>
+          </li>
+      </ul>
+  </div>
+  <!-- 风格_欢迎页 -->
+  <div class="manner-trunk2 ">
+      <ul class="trunk-title clearFix">
+            <li>是否开启：    
+              <label><input name="Fruit" type="radio" value="是" />是 </label> 
+              <label><input name="Fruit" type="radio" value="否" />否</label> 
+            </li>
+            <li class="">保存</li>
+      </ul>
+      <ul class="trunk-title clearFix">
+            <li>
+              <label class="file_upload1">添加图片
+                <input type="file"  id="file_upload1"/>
+              </label>
+           </li>
+            <li>建议：图片建议尺寸
+              <span>1080px*1920px</span>（图片大小在
+              <span>1M</span>以内）
+            </li>
+           
+      </ul>
+
+      <ul class="hengfu clearFix">
+          <li>
+            <img src="img/welcome.jpg" alt="">
+            <i class="icon iconfont icon-shanchu"></i>
+          </li>
+          <li>
+            <img src="img/welcome.jpg" alt="">
+            <i class="icon iconfont icon-shanchu"></i>
+          </li>
+           <li>
+            <img src="img/welcome.jpg" alt="">
+            <i class="icon iconfont icon-shanchu"></i>
+          </li><li>
+            <img src="img/welcome.jpg" alt="">
+            <i class="icon iconfont icon-shanchu"></i>
+          </li>
+          <li>
+            <img src="img/welcome.jpg" alt="">
+            <i class="icon iconfont icon-shanchu"></i>
+          </li>
+           <!-- 这个是上传图片 添加的模板 -->
+          <li class="image_container">
+            <img  id="preview1" src="img/welcome.jpg" alt="">
+            <i class="icon iconfont icon-shanchu"></i>
+          </li>
+           
+      </ul>
   </div>
 
 </div>
@@ -113,50 +234,103 @@
 
 
 
+<!--修改密码弹窗-->
+<div class="modal" id="tjxy-addKechengModal" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
+    <div class="modal-dialog">
+        <div class="modal-content">
+            <div class="modal-header">
+                <button type="button" class="close" data-dismiss="modal" aria-hidden="true"><i class="icon iconfont icon-close"></i></button>
+                <h4 class="modal-title">修改密码</h4>
+            </div>
+            <div class="modal-body">                   
+                    <div class="clearfix modal-info ">
+                       <div class="adv-table" >
+                        <ul class="new-mima">
+                          <li><span>用户名：</span>18801012566</li>
+                          <li><span>输入原密码：</span><input type="text" placeholder="请输入原密码"></li>
+                          <li><span>输入新密码：</span><input type="text" placeholder="请输入6位以上新密码"></li>
+                          <li><span>重复新密码：</span><input type="text" placeholder="请重复6位以上新密码"></li>
+                        </ul>
+                        <p class="tishi center">密码输入有误，请重新输入</p>
+                        <div class="modal-btnbox center">
+                            <button  data-dismiss="modal" data-toggle="modal" href="#plgl-quedinghebingxueyuanModal" type="button" class="btn btn-success">确 定</button>
+                        </div>
+                    </div>
+                </div>  
+            </div>
+        </div>
+    </div>
+</div>
+
+<!--横幅切换效果弹窗-->
+<div class="modal" id="fg-tabModal" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
+    <div class="modal-dialog">
+        <div class="modal-content">
+            <div class="modal-header">
+                <button type="button" class="close" data-dismiss="modal" aria-hidden="true"><i class="icon iconfont icon-close"></i></button>
+                <h4 class="modal-title">横幅切换效果</h4>
+            </div>
+            <div class="modal-body">                   
+                    <div class="clearfix modal-info ">
+                       <div class="adv-table" >
+                        <ul class="">
+                          <li>
+                            <span>切换时间：</span>
+                            <select>
+                              <option>1秒</option>
+                              <option>3秒</option>
+                              <option>5秒</option>
+                            </select>
+                          </li>
+                          <li class="clearFix">
+                            <span class="fl">切换效果：</span>
+                            <div>
+                                 <i class="icon iconfont icon-flows"></i>
+                                 <em>水平滑动</em>
+                            </div>
+                            <div class="active">
+                                 <i class="icon iconfont icon-flowsleft"></i>
+                                 <em>水平翻转</em>
+                            </div>
+                          </li>
+                        </ul>
+                        <div class="modal-btnbox center">
+                            <button  data-dismiss="modal" data-toggle="modal" href="#plgl-quedinghebingxueyuanModal" type="button" class="btn btn-success">确 定</button>
+                        </div>
+                    </div>
+                </div>  
+            </div>
+        </div>
+    </div>
+</div>
 
 
 
 
 
 
-
-
-
-<!-- <i class="fa fa-bus"></i>
-<input type="checkbox" class="multi-switch" value="1" checked><br>
-<input type="checkbox" class="multi-switch" value="1" ><br>
-
-<input type="number" style="border: none; color:#000;border-bottom: 1px solid #000; " value="0">
-上传图片
-<label class="file_upload">
-  <input type="file"  id="file_upload"/>    
-  <div class="image_container">
-      <img id="preview" width="100" height="100" src="img/uploadImg.jpg">
-  </div>
-</label>
- -->
 
 
 
 
 </body>
 <script src="js/jquery-1.10.2.min.js"></script>
+<script src="js/bootstrap.min.js"></script>
 <script src="js/script.js"></script>
 <script type="text/javascript">
 window.onload = function(){
 
-  // 设置左侧导航的最小高度
-  var height = $(window).height()-95;
-  var height1 = height+3;
- $('.index-leftNav').css('minHeight',height);
- $('.rightPreview').css('minHeight',height1);
-// console.log($('.fa ')[0])
 
+  // 欢迎页设置单选样式
+  $('label').click(function(){
+    var radioId = $(this).attr('name');
+    $('label').removeAttr('class') && $(this).attr('class', 'checked');
+    $('input[type="radio"]').removeAttr('checked') && $('#' + radioId).attr('checked', 'checked');
+    // 取得选中的单选按钮的值
+    console.log($(this).find('input').attr('value'))
 
-
-
-
-
+  });
+  
 
 
 

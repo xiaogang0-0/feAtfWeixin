@@ -1,0 +1,355 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="renderer" content="webkit">
+<meta http-equiv="X-UA-Compatible" content="IE=Edge,chrome=1" >
+<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0">
+<meta name="keywords" content="">
+<meta name="description" content="">
+<link rel="stylesheet" type="text/css" href="css/style.css">
+<!-- HTML5 shim and Respond.js IE8 support of HTML5 elements and media queries -->
+<!--[if lt IE 9]>
+<script src="js/html5shiv.js"></script>
+<script src="js/respond.min.js"></script>
+<![endif]-->
+<style>
+.border{ border:1px solid #000;}
+
+
+
+/*中间内容*/
+.index-cont {float: left; background: #f3f7fd; }
+/*中间一级导航*/
+.index-cont .cNav {position:relative;border-bottom: 1px solid #d5d8dd;  margin-bottom: -1px;background: #fff; }
+.index-cont .cNav>li{ float: left;  font-size:18px; line-height:62px; border-bottom: 2px solid rgba(0,0,0,0);color: #000; padding: 0 22px;margin-left: 43px;}
+
+.index-cont .cNav>li:hover,.index-cont .cNav .active {border-color:#45c8dc;color:#45c8dc;cursor:pointer;}
+
+.cNav .active .cNav-list {display: block;}
+.cNav>li:hover .cNav-list {display: block;}/*后期去掉 直接添加active*/
+/*中间二级导航*/
+.cNav .cNav-list  {display:none; width:100% ;position: absolute; left: 0; top:65px;   background: #fff; padding: 10px 0;}
+.cNav .cNav-list li {float: left;  font-size:14px; line-height:30px; border: 1px solid #f0f3fb;color: #000; padding: 0 25px;margin-left: 43px; background: #fbfbfe; }
+.cNav .cNav-list li:nth-of-type(3){margin-left: 35px;}
+.cNav-list li:hover,.cNav-list .active {border-color: #45c8dc;color: #45c8dc;}
+
+
+.index-cont .cont-trunk,
+.index-cont .cont-trunk1,
+.index-cont .cont-trunk2 {margin:0 42px;margin-top: 80px;border-radius:  20px; padding:0px 27px 19px 27px; background: #fff;}
+
+/*三级导航*/
+.cont-trunk .trunk-title,
+.cont-trunk1 .trunk-title,
+.cont-trunk2 .trunk-title {padding: 13px 0;}
+.cont-trunk .trunk-title li,
+.cont-trunk1 .trunk-title li,
+.cont-trunk2 .trunk-title li {float: left;font-size:14px;line-height: 32px; padding: 0 18px; border: 1px solid #29acc0; background: #45c8dc; color: #fff; margin-right: 10px;cursor:pointer;}
+.cont-trunk .tishi, 
+.cont-trunk1 .tishi,
+.cont-trunk2 .tishi{height: 24px;font-size: 14px;  line-height:24px;color: #45c8dc;}
+
+/*主题*/
+.cont-trunk .zhuti li,
+.cont-trunk1 .hengfu li,
+.cont-trunk2 .hengfu li {float: left; border: 1px dashed  #bbbbbb;margin:  1px 18px 15px 1px ;cursor:pointer;}
+.cont-trunk .zhuti img {width: 182px; height: 293px;}
+.cont-trunk .zhuti li:active,.cont-trunk .zhuti .active ,
+.cont-trunk1 .hengfu li:active,.cont-trunk1 .hengfu .active,
+.cont-trunk2 .hengfu li:active,.cont-trunk2 .hengfu .active 
+{;margin:  0 17px 14px 0px ; border: 2px solid #45c8dc;}
+/*横幅*/
+.trunk-title label {margin: 0;font-weight: 500;}
+.cont-trunk1 .hengfu,
+.cont-trunk2 .hengfu {position: relative; padding-bottom:18px; border-bottom: 1px solid #45c8dc;}
+.cont-trunk1 .hengfu li,
+.cont-trunk2 .hengfu li {position: relative;}
+.cont-trunk1 .hengfu img,
+.cont-trunk2 .hengfu img {width: 182px; height: 82px;}
+.cont-trunk1 .hengfu-con,
+.cont-trunk2 .hengfu-con {border: none; padding-bottom:0px;padding-top: 29px;}
+.hengfu  i{ position: absolute; top: 1px; right: 1px; width: 16px; height: 16px; font-size: 18px;line-height:16px;border: 1px solid #45c8dc; color: #45c8dc; text-align: center; background: #fff;}
+.hengfu  li i:nth-of-type(2){right: 17px; border-right: none;}
+
+/*欢迎页*/
+
+.cont-trunk2 input[type="radio"] {margin: 3px 3px 0px 5px;display: none;}
+.cont-trunk2 .trunk-title:nth-of-type(1) label {height: 32px;padding-left: 26px;cursor: pointer;background: url(img/radiuBJ.png) no-repeat left top;margin-left: 15px;}
+.cont-trunk2 .trunk-title:nth-of-type(1) label.checked {background-position: left bottom;color: #45c8dc;}
+.cont-trunk2 .trunk-title:nth-of-type(1)  li:nth-of-type(1) {font-size:14px; border: none;padding-left: 0; background: #fff; color: #777; }
+.cont-trunk2 .trunk-title:nth-of-type(2) {padding: 7px 0 29px 0;}
+.cont-trunk2 .trunk-title:nth-of-type(2)  li:nth-of-type(2) {font-size:14px; border: none;padding-left: 7px; background: #fff; color: #777; }
+.cont-trunk2 .trunk-title:nth-of-type(2)  li:nth-of-type(2)  span {color:#f8585a;}
+.cont-trunk2 .hengfu {padding: 0 ;border: none;}
+.cont-trunk2 .hengfu img{height:324px;}
+</style>
+</head>
+<body>
+
+<!-- 头部结构 -->
+<div class="index-head">
+  <a href="index.html" class="clearFix">
+    <div class="logo">
+      <img src="img/logo.png">
+    </div>
+    <h2>新锐教育</h2>
+  </a>
+  <div class="user">
+    <span>薛晓慧</span>
+    <i class="fa fa-angle-down"></i>
+    <!-- <ul>预留下拉位置
+      <li class="c-999"> 退出 </li>
+    </ul> -->
+  </div>
+</div>
+<!-- 左侧导航 -->
+<ul class="index-leftNav">
+    <li class="active">
+      <a href="javascript:;">
+        <i class="icon iconfont icon-school"></i>
+        <p>微信官网</p>
+      </a>
+        
+    </li>
+    <li>
+      <a href="javascript:;">
+        <i class="icon iconfont icon-school"></i>
+        <p>招生秀</p>
+      </a>
+        
+    </li>
+</ul>
+<!-- 右侧预览 -->
+<div class="rightPreview">
+  <div class="index-h5div">
+    <div class="h5title ">
+      预览
+      <i class="fr fa fa-angle-down border"></i>
+      <img src="img/previewBJ.jpg" alt="" class="border">
+    </div>
+    <iframe id="wgwiframe" name="wgwiframe"  src="wx-index/wx-index.html" frameborder="0" class=""></iframe>
+  </div>
+</div>
+
+<!-- 中间内容 -->
+<div class="index-cont">
+  <ul class="cNav clearFix">
+    <li class="active">风格
+        <ul class="cNav-list  clearFix">
+            <li class="active">主题</li>
+            <li>横幅</li>
+            <li>欢迎页</li>
+        </ul>
+    </li>
+    <li>项目</li>
+    <li>内容</li>
+    <li>系统</li>
+  </ul>
+  <!-- 主题 -->
+  <div class="cont-trunk none">
+        <ul class="trunk-title clearFix">
+            <li class="">保存</li>
+        </ul>
+        <!-- <p class="tishi">已选横幅</p> -->
+        <ul class="zhuti clearFix">
+            <li><img src="img/index.jpg" alt=""></li>
+            <li><img src="img/index.jpg" alt=""></li>
+            <li><img src="img/index.jpg" alt=""></li>
+            <li><img src="img/index.jpg" alt=""></li>
+            <li><img src="img/index.jpg" alt=""></li>
+        </ul>
+  </div>
+  <!-- 横幅 -->
+  <div class="cont-trunk1 ">
+      <ul class="trunk-title clearFix">
+            <li>
+              <label class="file_upload">添加图片
+                <input type="file"  id="file_upload"/>
+              </label>
+           </li>
+            <li>横幅切换效果</li>
+            <li class="">保存</li>
+      </ul>
+      <p class="tishi">已选横幅</p>
+      <ul class="hengfu clearFix">
+          <li>
+            <img src="img/hengfu.jpg" alt="">
+             <i class="fa fa-angle-down"></i>
+             <i class="fa fa-angle-down"></i>
+          </li>
+          <li>
+            <img src="img/hengfu.jpg" alt="">
+            <i class="fa fa-angle-down"></i>
+            <i class="fa fa-angle-down"></i>
+          </li>
+           <li>
+            <img src="img/hengfu.jpg" alt="">
+             <i class="fa fa-angle-down"></i>
+             <i class="fa fa-angle-down"></i>
+          </li>
+          
+          <li><img src="" alt=""></li>
+          <li><img src="" alt=""></li>
+      </ul>
+      <ul class="hengfu  hengfu-con clearFix">
+          <li>
+            <img src="img/hengfu.jpg" alt="">
+             <i class="fa fa-angle-down"></i>
+          </li>
+          <li>
+            <img src="img/hengfu.jpg" alt="">
+             <i class="fa fa-angle-down"></i>
+          </li>
+          <li>
+            <img src="img/hengfu.jpg" alt="">
+             <i class="fa fa-angle-down"></i>
+          </li>
+          <li>
+            <img src="img/hengfu.jpg" alt="">
+             <i class="fa fa-angle-down"></i>
+          </li>
+          <!-- 这个是上传图片 添加的模板 -->
+          <li class="image_container">
+            <img  id="preview" src="img/hengfu.jpg" alt="">
+            <i class="fa fa-angle-down"></i>
+          </li>
+      </ul>
+  </div>
+  <!-- 欢迎页 -->
+  <div class="cont-trunk2 ">
+      <ul class="trunk-title clearFix">
+            <li>是否开启：    
+              <label><input name="Fruit" type="radio" value="是" />是 </label> 
+              <label><input name="Fruit" type="radio" value="否" />否</label> 
+            </li>
+            <li class="">保存</li>
+      </ul>
+      <ul class="trunk-title clearFix">
+            <li>
+              <label class="file_upload1">添加图片
+                <input type="file"  id="file_upload1"/>
+              </label>
+           </li>
+            <li>建议：图片建议尺寸
+              <span>1080px*1920px</span>（图片大小在
+              <span>1M</span>以内）
+            </li>
+           
+      </ul>
+
+      <ul class="hengfu clearFix">
+          <li>
+            <img src="img/welcome.jpg" alt="">
+             <i class="fa fa-angle-down"></i>
+          </li>
+          <li>
+            <img src="img/welcome.jpg" alt="">
+            <i class="fa fa-angle-down"></i>
+          </li>
+           <li>
+            <img src="img/welcome.jpg" alt="">
+             <i class="fa fa-angle-down"></i>
+          </li><li>
+            <img src="img/welcome.jpg" alt="">
+             <i class="fa fa-angle-down"></i>
+          </li>
+          <li>
+            <img src="img/welcome.jpg" alt="">
+            <i class="fa fa-angle-down"></i>
+          </li>
+           <!-- 这个是上传图片 添加的模板 -->
+          <li class="image_container">
+            <img  id="preview1" src="img/welcome.jpg" alt="">
+            <i class="fa fa-angle-down"></i>
+          </li>
+           
+          
+      </ul>
+  </div>
+
+
+
+  
+</div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<!-- <i class="fa fa-bus"></i>
+<input type="checkbox" class="multi-switch" value="1" checked><br>
+<input type="checkbox" class="multi-switch" value="1" ><br>
+
+<input type="number" style="border: none; color:#000;border-bottom: 1px solid #000; " value="0">
+上传图片
+<label class="file_upload">
+  <input type="file"  id="file_upload"/>    
+  <div class="image_container">
+      <img id="preview" width="100" height="100" src="img/uploadImg.jpg">
+  </div>
+</label>
+ -->
+
+
+
+
+</body>
+<script src="js/jquery-1.10.2.min.js"></script>
+<script src="js/script.js"></script>
+<script type="text/javascript">
+window.onload = function(){
+
+  // 设置左侧导航的最小高度
+  var height = $(window).height()-95;//可视区高度
+  var width = $(window).width();//可视区宽度
+  var height1 = height+3;
+  var htmlHeight = $(document).height();//文档高度
+  var conWidtn = $(window).width()-$('.index-leftNav').width()-$('.rightPreview').width();//中间内容宽度
+console.log(htmlHeight)
+      $('.index-leftNav').css('minHeight',height);
+      $('.rightPreview').css('minHeight',height1);
+
+  // if(htmlHeight < height+95){//判断内容高度超出浏览器高度（小屏幕）
+  //     $('.index-leftNav').css('minHeight',height);
+  //     $('.rightPreview').css('minHeight',height1);
+  // }else{
+  //     $('.index-leftNav').css('minHeight',htmlHeight-95);
+  //     $('.rightPreview').css('minHeight',htmlHeight-92);
+  // }
+
+//设置中间宽度自计算
+  $('.index-cont').css('width',conWidtn-3) 
+  $(window).resize(function () {          //当浏览器大小变化时
+      conWidtn = $(window).width()-$('.index-leftNav').width()-$('.rightPreview').width();
+       $('.index-cont').css('width',conWidtn-3) 
+  });
+
+
+  // 欢迎页设置单选样式
+  $('label').click(function(){
+    var radioId = $(this).attr('name');
+    $('label').removeAttr('class') && $(this).attr('class', 'checked');
+    $('input[type="radio"]').removeAttr('checked') && $('#' + radioId).attr('checked', 'checked');
+    // 取得选中的单选按钮的值
+    console.log($(this).find('input').attr('value'))
+
+  });
+  
+
+
+
+
+}
+
+</script>
+</html>

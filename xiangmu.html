@@ -1,0 +1,374 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="renderer" content="webkit">
+<meta http-equiv="X-UA-Compatible" content="IE=Edge,chrome=1" >
+<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0">
+<meta name="keywords" content="">
+<meta name="description" content="">
+<link rel="stylesheet" type="text/css" href="css/style.css">
+<title>微官网-项目</title>
+<!-- HTML5 shim and Respond.js IE8 support of HTML5 elements and media queries -->
+<!--[if lt IE 9]>
+<script src="js/html5shiv.js"></script>
+<script src="js/respond.min.js"></script>
+<![endif]-->
+<style>
+
+
+
+</style>
+</head>
+<body>
+
+<!-- 头部结构 -->
+<div class="index-head">
+  <a href="index.html" class="clearFix">
+    <div class="logo">
+      <img src="img/logo.png">
+    </div>
+    <h2>新锐教育</h2>
+  </a>
+  <div class="user">
+    <span>薛晓慧</span>
+    <i class="fa fa-angle-down" id="user-btn"></i>
+    <ul class="none">
+      <li data-toggle="modal" href="#tjxy-addKechengModal"> 
+        <i class="icon iconfont icon-xiugaimima"></i>
+        修改密码 
+      </li>
+      <li> 
+        <i class="icon iconfont icon-tuichu"></i>
+        退出登陆 
+      </li>
+    </ul>
+  </div>
+</div>
+<!-- 左侧导航 -->
+<ul class="index-leftNav">
+    <li class="active">
+      <a href="javascript:;">
+        <i class="icon iconfont icon-weixinwang"></i>
+        <p>微信官网</p>
+      </a>
+    </li>
+    <li>
+      <a href="javascript:;">
+        <i class="icon iconfont icon-xiaoshoupad"></i>
+        <p>销售pad</p>
+      </a>  
+    </li>
+</ul>
+<!-- 右侧预览 -->
+<div class="rightPreview">
+  <div class="index-h5div">
+    <div class="h5title ">
+      预览
+      <i class="icon iconfont icon-erweima" id="js-btn"></i>
+      <div id="js-ma">
+        <img src="img/saoma.png" alt="" class="">
+      </div>
+      
+    </div>
+    <iframe id="wgwiframe" name="wgwiframe"  src="wx-index/wx-index.html" frameborder="0" class=""></iframe>
+  </div>
+</div>
+
+<!-- 中间内容 -->
+<div class="index-cont">
+    <ul class="cNav clearFix">
+      <li>
+          <a href="index.html">风格</a>
+         <!--  <ul class="cNav-list  clearFix">
+              <li class="active">主题</li>
+              <li>横幅</li>
+              <li>欢迎页</li>
+          </ul> -->
+      </li>
+      <li class="active">
+          <a href="xiangmu.html">项目</a>
+      </li>
+      <li>
+          <a href="neirong.html">内容</a>
+      </li>
+      <li>
+          <a href="xitong.html">系统</a>
+      </li>
+    </ul>
+ 
+  <!-- 项目-table -->
+    <div class="manner-trunk1 xiangmu-table">
+        <ul class="trunk-title clearFix">
+              <li data-toggle="modal" href="#xiangmu-tabModal">新增</li>
+              
+        </ul>
+        <table class="display table table-bordered table-striped">
+
+          <thead>
+            <tr>
+              <th width="23%">项目</th>
+              <th width="27%">发布状态</th>
+              <th width="28%">操作</th>
+              <th width="22%">性质</th>
+            </tr>
+          </thead>
+        
+          <tbody>
+            <tr>
+              <td class="title1">
+                <i class="icon iconfont icon-school title5"></i>
+                热门课程
+              </td>
+              <td>
+                <input type="checkbox" class="multi-switch" value="1" checked>
+              </td>
+              <td>
+                  <i class="icon iconfont icon-shangshengyiji"></i>
+                  <i class="icon iconfont icon-xiajiangyiji"></i>
+              </td>
+              <td class="c-000">系统</td>
+            </tr>
+            <tr>
+              <td class="title2">
+                <i class="icon iconfont icon-gift"></i>
+                最新活动
+              </td>
+              <td><input type="checkbox" class="multi-switch" value="1" ></td>
+              <td>
+                  <i class="icon iconfont icon-shangshengyiji"></i>
+                  <i class="icon iconfont icon-xiajiangyiji"></i>
+              </td>
+              <td class="c-000">系统</td>
+            </tr>
+            <tr>
+              <td class="title3">
+                <i class="icon iconfont icon-phone"></i>
+                联系我们
+              </td>
+              <td><input type="checkbox" class="multi-switch" value="1" ></td>
+              <td>
+                  <i class="icon iconfont icon-shangshengyiji"></i>
+                  <i class="icon iconfont icon-xiajiangyiji"></i>
+              </td>
+              <td class="c-000">系统</td>
+            </tr>
+            <tr>
+              <td class="title4">
+                <i class="icon iconfont icon-people"></i>
+                优秀师资
+              </td>
+              <td><input type="checkbox" class="multi-switch" value="1" ></td>
+              <td>
+                  <i class="icon iconfont icon-shangshengyiji"></i>
+                  <i class="icon iconfont icon-xiajiangyiji"></i>
+              </td>
+              <td class="c-000">系统</td>
+            </tr>
+            <tr>
+              <td class="title5">
+                <i class="icon iconfont icon-jiaoxuejihua"></i>
+                投诉建议
+              </td>
+              <td><input type="checkbox" class="multi-switch" value="1" ></td>
+              <td>
+                  <i class="icon iconfont icon-shangshengyiji"></i>
+                  <i class="icon iconfont icon-xiajiangyiji"></i>
+                  <i class="icon iconfont icon-bianji"></i>
+                  <i class="icon iconfont icon-shanchu" data-toggle="modal" href="#xmdelere-tabModal"></i>
+              </td>
+              <td>自定义</td>
+            </tr>
+            <tr>
+              <td class="title6">
+                <i class="icon iconfont icon-jiaoxueluxiang"></i>
+                校区展示
+              </td>
+              <td><input type="checkbox" class="multi-switch" value="1" ></td>
+              <td>
+                  <i class="icon iconfont icon-shangshengyiji"></i>
+                  <i class="icon iconfont icon-xiajiangyiji"></i>
+                  <i class="icon iconfont icon-bianji"></i>
+                  <i class="icon iconfont icon-shanchu" data-toggle="modal" href="#xmdelere-tabModal"></i>
+              </td>
+              <td>自定义</td>
+            </tr>
+            <tr>
+              <td class="title2">
+                <i class="icon iconfont icon-gift"></i>
+                最新活动
+              </td>
+              <td><input type="checkbox" class="multi-switch" value="1" ></td>
+              <td>
+                  <i class="icon iconfont icon-shangshengyiji"></i>
+                  <i class="icon iconfont icon-xiajiangyiji"></i>
+                  <i class="icon iconfont icon-bianji"></i>
+                  <i class="icon iconfont icon-shanchu" data-toggle="modal" href="#xmdelere-tabModal"></i>
+              </td>
+              <td>自定义</td>
+            </tr>
+            <tr>
+              <td class="title1">
+                <i class="icon iconfont icon-book"></i>
+                优惠课程
+              </td>
+              <td><input type="checkbox" class="multi-switch" value="1" ></td>
+              <td>
+                  <i class="icon iconfont icon-shangshengyiji"></i>
+                  <i class="icon iconfont icon-xiajiangyiji c-bbb"></i>
+                  <i class="icon iconfont icon-bianji"></i>
+                  <i class="icon iconfont icon-shanchu" data-toggle="modal" href="#xmdelere-tabModal"></i>
+              </td>
+              <td>自定义</td>
+            </tr>
+          </tbody>
+        </table>
+    </div>
+</div>
+
+
+
+<!--修改密码弹窗-->
+<div class="modal" id="tjxy-addKechengModal" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
+  <div class="modal-dialog">
+      <div class="modal-content">
+          <div class="modal-header">
+              <button type="button" class="close" data-dismiss="modal" aria-hidden="true"><i class="icon iconfont icon-close"></i></button>
+              <h4 class="modal-title">修改密码</h4>
+          </div>
+          <div class="modal-body">                   
+                  <div class="clearfix modal-info ">
+                     <div class="adv-table" >
+                      <ul class="new-mima">
+                        <li><span>用户名：</span>18801012566</li>
+                        <li><span>输入原密码：</span><input type="text" placeholder="请输入原密码"></li>
+                        <li><span>输入新密码：</span><input type="text" placeholder="请输入6位以上新密码"></li>
+                        <li><span>重复新密码：</span><input type="text" placeholder="请重复6位以上新密码"></li>
+                      </ul>
+                      <p class="tishi center">密码输入有误，请重新输入</p>
+                      <div class="modal-btnbox center">
+                          <button  data-dismiss="modal" data-toggle="modal" href="#plgl-quedinghebingxueyuanModal" type="button" class="btn btn-success">确 定</button>
+                      </div>
+                  </div>
+              </div>  
+          </div>
+      </div>
+  </div>
+</div>
+
+<!-- 项目-新增弹窗 -->
+<div class="modal" id="xiangmu-tabModal" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
+    <div class="modal-dialog">
+        <div class="modal-content">
+            <div class="modal-header">
+                <button type="button" class="close" data-dismiss="modal" aria-hidden="true"><i class="icon iconfont icon-close"></i></button>
+                <h4 class="modal-title">新增</h4>
+            </div>
+            <div class="modal-body">                   
+                    <div class="clearfix modal-info ">
+                       <div class="adv-table" >
+                        <ul class="">
+                          <li><span>项目名称：</span><input type="text" placeholder="输入四字名称"></li>
+                          <li class="clearFix">
+                            <span class="fl">项目图标：</span>  <strong class="active">默认</strong><strong>自定义</strong>
+                            <div class="xz-logo ">
+                                <div class="clearFix ">
+                                  <i class="icon iconfont icon-school"></i>
+                                </div>
+                                <div class="clearFix none">
+                                  <i class="icon iconfont icon-03"></i>
+                                  <i class="icon iconfont icon-school"></i>
+                                  <i class="icon iconfont icon-phone"></i>
+                                  <i class="icon iconfont icon-gift"></i>
+                                  <i class="icon iconfont icon-book"></i>
+                                  <i class="icon iconfont icon-suitcase"></i>
+                                  <i class="icon iconfont icon-medal"></i>
+                                  <i class="icon iconfont icon-jiaoxue2"></i>
+                                  <i class="icon iconfont icon-jiaoxuehuanjie"></i>
+                                  <i class="icon iconfont icon-jiaoxueguanli"></i>
+                                  <i class="icon iconfont icon-sousuo-sousuo"></i>
+                                  <i class="icon iconfont icon-jiaoxuejihua"></i>
+                                  <i class="icon iconfont icon-academic_cap"></i>
+                                  <i class="icon iconfont icon-brush"></i>
+                                  <i class="icon iconfont icon-toujiaoxueyuan_link"></i>
+                                </div>
+                            </div> 
+                          </li>
+                        </ul>
+                        <div class="modal-btnbox center">
+                            <button  data-dismiss="modal" data-toggle="modal" href="#plgl-quedinghebingxueyuanModal" type="button" class="btn btn-success">确 定</button>
+                        </div>
+                    </div>
+                </div>  
+            </div>
+        </div>
+    </div>
+</div>
+
+<!-- 项目-删除弹窗 -->
+<div class="modal" id="xmdelere-tabModal" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
+    <div class="modal-dialog">
+        <div class="modal-content">
+            <div class="modal-header">
+                <button type="button" class="close" data-dismiss="modal" aria-hidden="true"><i class="icon iconfont icon-close"></i></button>
+                <h4 class="modal-title">删除</h4>
+            </div>
+            <div class="modal-body">                   
+                    <div class="clearfix modal-info ">
+                       <div class="adv-table" >
+                        <ul class="new-mima">
+                          <li>确定删除此项目吗？</li>
+                          
+                        </ul>
+                        <div class="modal-btnbox center">
+                            <button  data-dismiss="modal" data-toggle="modal" href="#plgl-quedinghebingxueyuanModal" type="button" class="btn btn-success">确 定</button>
+                        </div>
+                    </div>
+                </div>  
+            </div>
+        </div>
+    </div>
+</div>
+
+</body>
+<script src="js/jquery-1.10.2.min.js"></script>
+<script src="js/bootstrap.min.js"></script>
+<script src="js/script.js"></script>
+<script type="text/javascript">
+window.onload = function(){
+// 项目表格hover 样式
+  var $th = $('.xiangmu-table').find('td');//所有的th标签
+  var $checked = $('#xiangmu-tabModal').find('strong');//弹窗的两个 单选按钮
+  var $xzLogo = $('#xiangmu-tabModal').find('.xz-logo');//弹窗的两个内容切换的父级
+  var $cont = $xzLogo.find('div');//弹窗的两个内容切换的子级
+  $th.click(function(){
+      $th.removeClass('hover');
+      $(this).parent('tr').find('td').addClass('hover')
+      // $(this).parent('tr').find('td').css('backgroundColor','#f1fafb')
+  })
+//项目弹窗 单选操作
+
+$checked.click(function(){
+    var index = $(this).index()-1;
+    $checked.removeClass('active')
+    $(this).addClass('active');
+
+    $cont.addClass('none');
+    $cont.eq(index).removeClass('none');
+   
+})
+
+
+
+
+
+
+
+
+
+
+
+}
+
+</script>
+</html>

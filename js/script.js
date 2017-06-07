@@ -2,11 +2,37 @@
 * @Author: user
 * @Date:   2017-05-12 10:19:18
 * @Last Modified by:   user
-* @Last Modified time: 2017-05-17 10:28:03
+* @Last Modified time: 2017-06-06 15:17:38
 */
 
 (function() {
   "use strict";
+  // 设置左侧导航的最小高度
+  var height = $(window).height()-95;//可视区高度
+  var width = $(window).width();//可视区宽度
+  var height1 = height+3;
+  var htmlHeight = $(document).height();//文档高度
+  var conWidtn = $(window).width()-$('.index-leftNav').width()-$('.rightPreview').width();//中间内容宽度
+
+      $('.index-leftNav').css('minHeight',height);
+      $('.rightPreview').css('minHeight',height1);
+console.log(htmlHeight)
+  // if(htmlHeight < height+95){//判断内容高度超出浏览器高度（小屏幕）
+  //     $('.index-leftNav').css('minHeight',height);
+  //     $('.rightPreview').css('minHeight',height1);
+  // }else{
+  //     $('.index-leftNav').css('minHeight',htmlHeight-95);
+  //     $('.rightPreview').css('minHeight',htmlHeight-92);
+  // }
+
+
+
+//设置中间宽度自计算
+  $('.index-cont').css('width',conWidtn-4) 
+  $(window).resize(function () {          //当浏览器大小变化时
+      conWidtn = $(window).width()-$('.index-leftNav').width()-$('.rightPreview').width();
+       $('.index-cont').css('width',conWidtn-4) 
+  });
 
 //添加按钮开关对象方法
  $.fn.multiSwitch = function (options) {
@@ -189,7 +215,6 @@
         });
     };
 
-
 // 调用开关方法
 $('.multi-switch').multiSwitch({
     functionOnChange: function ($element) {
@@ -197,33 +222,75 @@ $('.multi-switch').multiSwitch({
     }
   });
 
-
 // 上传图片  
-$(function() {
-      $("#file_upload").change(function() {
-      var $file = $(this);
-      var fileObj = $file[0];
-      var windowURL = window.URL || window.webkitURL;
-      var dataURL;
-      var $img = $("#preview");
-       
-      if(fileObj && fileObj.files && fileObj.files[0]){
-      dataURL = windowURL.createObjectURL(fileObj.files[0]);
-      $img.attr('src',dataURL);
-      }else{
-      dataURL = $file.val();
-      var imgObj = document.getElementById("preview");
-      // 两个坑:
-      // 1、在设置filter属性时，元素必须已经存在在DOM树中，动态创建的Node，也需要在设置属性前加入到DOM中，先设置属性在加入，无效；
-      // 2、src属性需要像下面的方式添加，上面的两种方式添加，无效；
-      imgObj.style.filter = "progid:DXImageTransform.Microsoft.AlphaImageLoader(sizingMethod=scale)";
-      imgObj.filters.item("DXImageTransform.Microsoft.AlphaImageLoader").src = dataURL;
-       
-      }
-      });
+$("#file_upload").change(function() {
+    var $file = $(this);
+    var fileObj = $file[0];
+    var windowURL = window.URL || window.webkitURL;
+    var dataURL;
+    var $img = $("#preview");
+     
+    if(fileObj && fileObj.files && fileObj.files[0]){
+    dataURL = windowURL.createObjectURL(fileObj.files[0]);
+    $img.attr('src',dataURL);
+    }else{
+    dataURL = $file.val();
+    var imgObj = document.getElementById("preview");
+    // 两个坑:
+    // 1、在设置filter属性时，元素必须已经存在在DOM树中，动态创建的Node，也需要在设置属性前加入到DOM中，先设置属性在加入，无效；
+    // 2、src属性需要像下面的方式添加，上面的两种方式添加，无效；
+    imgObj.style.filter = "progid:DXImageTransform.Microsoft.AlphaImageLoader(sizingMethod=scale)";
+    imgObj.filters.item("DXImageTransform.Microsoft.AlphaImageLoader").src = dataURL;
+     
+    }
+});
+
+$("#file_upload1").change(function() {
+    var $file = $(this);
+    var fileObj = $file[0];
+    var windowURL = window.URL || window.webkitURL;
+    var dataURL;
+    var $img = $("#preview1");
+     
+    if(fileObj && fileObj.files && fileObj.files[0]){
+    dataURL = windowURL.createObjectURL(fileObj.files[0]);
+    $img.attr('src',dataURL);
+    }else{
+    dataURL = $file.val();
+    var imgObj = document.getElementById("preview1");
+    // 两个坑:
+    // 1、在设置filter属性时，元素必须已经存在在DOM树中，动态创建的Node，也需要在设置属性前加入到DOM中，先设置属性在加入，无效；
+    // 2、src属性需要像下面的方式添加，上面的两种方式添加，无效；
+    imgObj.style.filter = "progid:DXImageTransform.Microsoft.AlphaImageLoader(sizingMethod=scale)";
+    imgObj.filters.item("DXImageTransform.Microsoft.AlphaImageLoader").src = dataURL;
+     
+    }
 });
 
 
+
+// 项目的 表格 hover
+
+  var $th = $('.neirong-table').find('td');
+  $th.click(function(){
+      $th.removeClass('hover');
+      $(this).parent('tr').find('td').addClass('hover')
+      // $(this).parent('tr').find('td').css('backgroundColor','#f1fafb')
+  })
+
+
+
+var $btnMa = $('#js-btn');//二维码的点击按钮
+var $Ma = $('#js-ma');//二维码元素
+var $user = $('.user');//用户按钮
+//手机预览二维码的操作
+$btnMa .click(function(){
+  $Ma.toggle();
+})
+//导航用户的操作
+$user .click(function(){
+  $user.find('ul').toggle();
+})
 
 
 
